@@ -9,10 +9,6 @@
 
 - Game developer **Huntbound (NDA)**
 
-- 👨‍💻 All of my projects are available at [polizhai.site/portfolio](https://polizhai.site/portfolio)
-
-- 📝 I regularly write articles on [polizhai.site/blog](https://polizhai.site/blog)
-
 - 💬 Ask me about **react**
 
 - 📫 How to reach me **dmytropolizhai@gmail.com**

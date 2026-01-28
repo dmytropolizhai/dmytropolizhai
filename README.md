@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=dmytropolizhai&label=Profile%20views&color=0e75b6&style=flat" alt="dmytropolizhai" /> </p>
 
-- 🔭 I’m currently working on [Curio.today](https://curio-today), [numerologgi.com](https://numerologgi.com/shop), [Disciplio](https://github.com/dmytropolizhai/disciplio)
+- 🔭 I’m currently working on [Curio.today](https://curio.today), [numerologgi.com](https://numerologgi.com/shop), [Disciplio](https://github.com/dmytropolizhai/disciplio)
 
 - 🌱 I’m currently learning **NextJS, React**
 

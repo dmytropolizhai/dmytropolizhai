@@ -1,4 +1,4 @@
-# Hi there, I'm Dmytro.
+# Hi there :)
 
 > Make it run, make it right.
 
@@ -54,10 +54,9 @@ Full-stack developer with a Linux-first mindset. I build software with a focus o
 
 -----
 
-### [ Stats ]
-
 ### [ Contact ]
 
-  * **Telegram:** [t.me/dmytropolizhai](https://t.me/dmytropolizhai)
-  * **LinkedIn:** [linkedin.com/in/dmytro-polizhai-770a86384](http://linkedin.com/in/dmytro-polizhai-770a86384)
-  * **Instagram:** [@dmytropolizhai](https://instagram.com/dmytropolizhai)
+Want to talk with me? Contact me via email: [dmytropolizhai@gmail.com](mailto:dmytropolizhai@gmail.com)
+* **Telegram:** [t.me/dmytropolizhai](https://t.me/dmytropolizhai)
+* **LinkedIn:** [linkedin.com/in/dmytro-polizhai](http://linkedin.com/in/dmytro-polizhai-770a86384)
+* **Instagram:** [@dmytropolizhai](https://instagram.com/dmytropolizhai)

@@ -5,7 +5,6 @@
 Full-stack developer with a Linux-first mindset. I build software with a focus on simplicity, maintainability, and solving real-world problems. I value clean architecture over flashy trends and spend my time thinking about how systems fit together.
 
 [x] Open for work
-[x] Available for freelance
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=dmytropolizhai&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" /> <a href="https://user-badge.committers.top/latvia/dmytropolizhai"> <img src="https://user-badge.committers.top/latvia/dmytropolizhai.svg" alt="committers.top badge" /> </a> </p>
 

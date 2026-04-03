@@ -47,7 +47,7 @@ Full-stack developer with a Linux-first mindset. I build software with a focus o
 
 ### [ Projects ]
 
-  * **One-to-One** -\> [github.com/dmytropolizhai/one-to-one](https://github.com/dmytropolizhai/one-to-one)
+  * **One-to-One (deprecated)** -\> [github.com/dmytropolizhai/one-to-one](https://github.com/dmytropolizhai/one-to-one)
   * **Curio** -\> [curio.today](https://curio.today)
   * **DNF** -\> [github.com/dmytropolizhai/dnf](https://github.com/dmytropolizhai/dnf)
 

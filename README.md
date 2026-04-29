@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="./cover.jpg" alt="Software Engineer" />
+</p
+
 # Hi there!
 
 > Make it run, make it right.

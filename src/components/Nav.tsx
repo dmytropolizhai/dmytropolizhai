@@ -9,7 +9,7 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 40)
+    const handler = () => setScrolled(window.scrollY > 400)
     window.addEventListener('scroll', handler)
     return () => window.removeEventListener('scroll', handler)
   }, [])
@@ -30,12 +30,24 @@ export function Nav() {
         to="/"
         aria-label="Home"
         className="font-mono text-[13px] tracking-[0.05em] no-underline transition-colors duration-200"
-        style={{ color: 'var(--color-muted)' }}
+        style={{
+          background: scrolled ? 'transparent' : 'var(--color-bg)',
+          padding: '8px 16px',
+          borderRadius: '8px',
+          color: "var(--color-muted)"
+        }}
       >
-        D<span style={{ color: 'var(--color-accent)' }}>.</span>dev
+        Polizhai<span style={{ color: 'var(--color-accent)' }}>.</span>site
       </Link>
 
-      <div className="hidden md:flex items-center gap-8">
+      <div 
+        className="hidden md:flex items-center gap-8" 
+        style={{
+          background: scrolled ? 'transparent' : 'var(--color-bg)',
+          padding: '8px 16px',
+          borderRadius: '8px',
+        }}
+      >
         <div className="flex gap-8">
           {[
             { href: '#about', label: t('nav.approach') },

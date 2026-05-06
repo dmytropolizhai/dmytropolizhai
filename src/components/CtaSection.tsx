@@ -29,7 +29,8 @@ export function CtaSection() {
       ref={ref}
       id="cta"
       aria-labelledby="cta-heading"
-      style={{ padding: '120px 48px', borderTop: '1px solid var(--color-border)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}
+      className="px-6 md:px-12 py-20 md:py-32 text-center relative overflow-hidden"
+      style={{ borderTop: '1px solid var(--color-border)' }}
     >
       <div aria-hidden="true" style={{
         position: 'absolute', inset: 0,

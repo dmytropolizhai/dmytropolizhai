@@ -4,8 +4,8 @@ export function Footer() {
   const { t } = useTranslation()
   return (
     <footer
-      className="flex justify-between items-center"
-      style={{ padding: '24px 48px', borderTop: '1px solid var(--color-border)' }}
+      className="flex flex-col sm:flex-row justify-between items-center px-6 md:px-12 py-6 gap-4 sm:gap-0"
+      style={{ borderTop: '1px solid var(--color-border)' }}
       role="contentinfo"
     >
       <span className="font-mono text-[11px] tracking-[0.06em]" style={{ color: 'var(--color-muted)' }}>

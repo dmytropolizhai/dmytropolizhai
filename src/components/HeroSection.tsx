@@ -14,11 +14,11 @@ export function HeroSection() {
   return (
     <section
       aria-label="Hero"
+      className="px-6 md:px-12"
       style={{
         minHeight: '100vh',
         display: 'grid',
         gridTemplateRows: '1fr auto',
-        padding: '0 48px',
         position: 'relative',
         overflow: 'hidden',
         background: 'var(--color-bg-gradient)',
@@ -106,11 +106,10 @@ export function HeroSection() {
       </div>
 
       {/* Stats bar */}
-      <motion.div {...fadeUp(0.4)} style={{
-        display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end',
-        padding: '32px 0', borderTop: '1px solid var(--color-border)', position: 'relative', zIndex: 1,
+      <motion.div {...fadeUp(0.4)} className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 md:gap-0 py-8" style={{
+        borderTop: '1px solid var(--color-border)', position: 'relative', zIndex: 1,
       }}>
-        <div style={{ display: 'flex', gap: 48 }}>
+        <div className="flex flex-col md:flex-row gap-6 md:gap-12">
           {([
             [t('hero.stat1_value'), t('hero.stat1_label')],
             [t('hero.stat2_value'), t('hero.stat2_label')],

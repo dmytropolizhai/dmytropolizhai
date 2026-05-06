@@ -26,11 +26,12 @@ export function AboutSection() {
       ref={ref}
       id="about"
       aria-labelledby="about-heading"
-      style={{ padding: '120px 48px', borderTop: '1px solid var(--color-border)', overflow: 'hidden' }}
+      className="px-6 md:px-12 py-20 md:py-32"
+      style={{ borderTop: '1px solid var(--color-border)', overflow: 'hidden' }}
     >
       <SectionLabel index="02" label={t('about.section_label')} />
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start">
         {/* Left */}
         <motion.div {...(inView ? revealProps(0) : { initial: { opacity: 0, y: 32 } })}>
           <h2 id="about-heading" className="font-serif" style={{ fontSize: 'clamp(36px,4vw,56px)', lineHeight: 1.1, fontWeight: 400, letterSpacing: '-0.01em' }}>

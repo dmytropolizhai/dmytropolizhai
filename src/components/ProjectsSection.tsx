@@ -17,7 +17,8 @@ export function ProjectsSection() {
       ref={ref}
       id="projects"
       aria-labelledby="projects-heading"
-      style={{ padding: '120px 48px', borderTop: '1px solid var(--color-border)' }}
+      className="px-6 md:px-12 py-20 md:py-32"
+      style={{ borderTop: '1px solid var(--color-border)' }}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 64 }}>
         <SectionLabel index="03" label={t('projects.section_label')} />
@@ -32,7 +33,7 @@ export function ProjectsSection() {
         </Link>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {featured.map((project, i) => (
           <motion.div
             key={project.id}

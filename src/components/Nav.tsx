@@ -18,9 +18,8 @@ export function Nav() {
     <nav
       role="navigation"
       aria-label="Main navigation"
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300"
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300 px-6 md:px-12 py-4 md:py-5`}
       style={{
-        padding: '20px 48px',
         borderBottom: scrolled ? '1px solid var(--color-border)' : '1px solid transparent',
         background: scrolled ? 'rgba(10,10,10,0.85)' : 'transparent',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',

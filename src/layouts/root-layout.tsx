@@ -1,7 +1,7 @@
 import { Outlet } from '@tanstack/react-router'
 import { NavigationBar } from '@/components/navigation-bar'
-import { Footer } from '@/components/Footer'
-import { Cursor } from '@/components/Cursor'
+import { Footer } from '@/components/footer'
+import { Cursor } from '@/components/cursor'
 
 export function RootLayout() {
   return (

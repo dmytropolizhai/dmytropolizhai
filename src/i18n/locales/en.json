@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "approach": "Approach",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Open for new projects",
+    "title_line1": "A website is",
+    "title_em": "your business face.",
+    "title_muted": "Let's make it strong.",
+    "sub": "I build websites, Telegram bots and automation for small businesses.\nNo fluff — only what works and brings clients.",
+    "cta_primary": "Discuss a project",
+    "cta_ghost": "View my work",
+    "stat1_value": "150€+",
+    "stat1_label": "Max order",
+    "stat2_value": "Top 5",
+    "stat2_label": "GitHub Latvia",
+    "stat3_value": "4 lang.",
+    "stat3_label": "Communication",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "section_label": "Approach",
+    "title_line1": "I solve problems.",
+    "title_em": "air.",
+    "title_prefix": "Not selling",
+    "body1": "A small business doesn't need an agency with a 40-slide deck. It needs a <strong>clear website</strong> that loads fast, looks professional, and turns visitors into clients.",
+    "body2": "I build exactly that — no over-engineering, on time, with an <strong>honest price</strong>. You describe the task, I solve it.",
+    "service1": "Websites & landing pages",
+    "service1_tag": "Primary",
+    "service2": "Telegram bots",
+    "service3": "Scripts & automation",
+    "lang1": "Latvian",
+    "lang2": "Russian",
+    "lang3": "Ukrainian",
+    "lang4": "English"
+  },
+  "projects": {
+    "section_label": "Projects",
+    "view_all": "View all projects",
+    "view_details": "View details",
+    "back": "← Back to projects"
+  },
+  "cta": {
+    "eyebrow": "Ready to work",
+    "title_line1": "Got a task?",
+    "title_em": "Let's solve it.",
+    "sub": "Describe what you need — I'll reply within a few hours.\nFirst consultation is free.",
+    "telegram": "Write on Telegram",
+    "response_note": "Usually reply within",
+    "response_time": "2–3 hours",
+    "or": "or",
+    "email": "Email",
+    "github": "GitHub"
+  },
+  "footer": {
+    "copy": "© 2025 D.dev — Riga, Latvia",
+    "open": "Open for projects →"
+  },
+  "meta": {
+    "home_title": "Website Development & Telegram Bots for Small Business",
+    "projects_title": "Projects — D.dev",
+    "project_detail_title": "Project — D.dev"
+  },
+  "seo": {
+    "h1": "Fast Websites for Small Business That Actually Work",
+    "h2_websites": "Simple Websites Built for Results",
+    "h2_bots": "Telegram Bots That Automate Your Workflow",
+    "h2_scripts": "Custom Scripts to Save Time and Reduce Manual Work"
+  }
+}

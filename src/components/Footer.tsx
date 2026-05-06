@@ -1,0 +1,19 @@
+import { useTranslation } from 'react-i18next'
+
+export function Footer() {
+  const { t } = useTranslation()
+  return (
+    <footer
+      className="flex justify-between items-center"
+      style={{ padding: '24px 48px', borderTop: '1px solid var(--color-border)' }}
+      role="contentinfo"
+    >
+      <span className="font-mono text-[11px] tracking-[0.06em]" style={{ color: 'var(--color-muted)' }}>
+        {t('footer.copy')}
+      </span>
+      <span className="font-mono text-[11px] tracking-[0.06em]" style={{ color: 'var(--color-accent)' }}>
+        {t('footer.open')}
+      </span>
+    </footer>
+  )
+}

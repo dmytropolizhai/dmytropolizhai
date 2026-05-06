@@ -1,0 +1,44 @@
+{
+  "nav": { "approach": "Pieeja", "projects": "Projekti", "contact": "Kontakts" },
+  "hero": {
+    "badge": "Atvērts jauniem projektiem",
+    "title_line1": "Mājaslapa ir",
+    "title_em": "biznesa seja.",
+    "title_muted": "Padarīsim to spēcīgu.",
+    "sub": "Izstrādāju mājas lapas, Telegram botus un automatizāciju mazajam biznesam.\nBez liekiem vārdiem — tikai tas, kas strādā.",
+    "cta_primary": "Apspriest projektu",
+    "cta_ghost": "Skatīt darbus",
+    "stat1_value": "150€+", "stat1_label": "Maks. pasūtījums",
+    "stat2_value": "Top 5", "stat2_label": "GitHub Latvija",
+    "stat3_value": "4 val.", "stat3_label": "Valodas",
+    "scroll": "Ritināt"
+  },
+  "about": {
+    "section_label": "Pieeja",
+    "title_line1": "Risinu uzdevumus.",
+    "title_em": "gaisu.",
+    "title_prefix": "Nepārdodu",
+    "body1": "Mazajam biznesam nav vajadzīga aģentūra ar 40 slaidu prezentāciju. Tam vajag <strong>saprotamu mājas lapu</strong>, kas ātri ielādējas un pārvērš apmeklētājus klientos.",
+    "body2": "Es izstrādāju tieši šādus risinājumus — bez sarežģīšanas, laikā un par <strong>godīgu cenu</strong>.",
+    "service1": "Mājas lapas un landing pages", "service1_tag": "Galvenais",
+    "service2": "Telegram boti",
+    "service3": "Skripti un automatizācija",
+    "lang1": "Latviešu", "lang2": "Krievu", "lang3": "Ukraiņu", "lang4": "Angļu"
+  },
+  "projects": { "section_label": "Projekti", "view_all": "Visi projekti", "view_details": "Skatīt", "back": "← Atpakaļ uz projektiem" },
+  "cta": {
+    "eyebrow": "Gatavs darbam",
+    "title_line1": "Ir uzdevums?",
+    "title_em": "Atrisināsim.",
+    "sub": "Aprakstiet vajadzību — atbildēšu dažu stundu laikā.\nPirmā konsultācija ir bezmaksas.",
+    "telegram": "Rakstīt Telegram",
+    "response_note": "Parasti atbildu",
+    "response_time": "2–3 stundu laikā",
+    "or": "vai",
+    "email": "E-pasts",
+    "github": "GitHub"
+  },
+  "footer": { "copy": "© 2025 D.dev — Rīga, Latvija", "open": "Atvērts projektiem →" },
+  "meta": { "home_title": "Mājas lapu un Telegram botu izstrāde mazajam biznesam", "projects_title": "Projekti — D.dev", "project_detail_title": "Projekts — D.dev" },
+  "seo": { "h1": "Ātrās mājas lapas mazajam biznesam", "h2_websites": "Vienkāršas lapas rezultātiem", "h2_bots": "Telegram boti darbplūsmas automatizācijai", "h2_scripts": "Skripti laika ietaupīšanai" }
+}

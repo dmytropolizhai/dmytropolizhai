@@ -1,14 +1,13 @@
-import { HeroSection } from '@/components/HeroSection'
-import { AboutSection } from '@/components/AboutSection'
-import { ProjectsSection } from '@/components/ProjectsSection'
-import { CtaSection } from '@/components/CtaSection'
+import { HeroSection } from '@/components/sections/hero'
+import { AboutSection } from '@/components/sections/about'
+import { ProjectsSection } from '@/components/sections/projects'
+import { CtaSection } from '@/components/sections/cta'
 
 export function HomePage() {
   return (
     <>
       <HeroSection />
       <AboutSection />
-      <ProjectsSection />
       <CtaSection />
     </>
   )

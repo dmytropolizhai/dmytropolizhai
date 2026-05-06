@@ -38,7 +38,7 @@
     "email": "E-pasts",
     "github": "GitHub"
   },
-  "footer": { "copy": "© 2025 D.dev — Rīga, Latvija", "open": "Atvērts projektiem →" },
-  "meta": { "home_title": "Mājas lapu un Telegram botu izstrāde mazajam biznesam", "projects_title": "Projekti — D.dev", "project_detail_title": "Projekts — D.dev" },
+  "footer": { "copy": "© 2025 Polizhai.site — Rīga, Latvija", "open": "Atvērts projektiem →" },
+  "meta": { "home_title": "Mājas lapu un Telegram botu izstrāde mazajam biznesam", "projects_title": "Projekti — Polizhai.site", "project_detail_title": "Projekts — Polizhai.site" },
   "seo": { "h1": "Ātrās mājas lapas mazajam biznesam", "h2_websites": "Vienkāršas lapas rezultātiem", "h2_bots": "Telegram boti darbplūsmas automatizācijai", "h2_scripts": "Skripti laika ietaupīšanai" }
 }

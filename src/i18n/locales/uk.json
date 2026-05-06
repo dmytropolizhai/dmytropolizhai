@@ -38,7 +38,7 @@
     "email": "Email",
     "github": "GitHub"
   },
-  "footer": { "copy": "© 2025 D.dev — Рига, Латвія", "open": "Відкритий до проєктів →" },
-  "meta": { "home_title": "Розробка сайтів і Telegram-ботів для малого бізнесу", "projects_title": "Проєкти — D.dev", "project_detail_title": "Проєкт — D.dev" },
+  "footer": { "copy": "© 2025 Polizhai.site — Рига, Латвія", "open": "Відкритий до проєктів →" },
+  "meta": { "home_title": "Розробка сайтів і Telegram-ботів для малого бізнесу", "projects_title": "Проєкти — Polizhai.site", "project_detail_title": "Проєкт — Polizhai.site" },
   "seo": { "h1": "Швидкі сайти для малого бізнесу, що реально працюють", "h2_websites": "Прості сайти для результату", "h2_bots": "Telegram-боти для автоматизації", "h2_scripts": "Скрипти для економії часу" }
 }

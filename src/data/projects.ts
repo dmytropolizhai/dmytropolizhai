@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: 'News Portal',
     description: 'Full-featured news platform with admin panel, categories, and SEO optimization for a local Latvian media outlet.',
     tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind'],
-    image: 'https://placehold.co/800x500/111111/d4ff6e?text=News+Portal',
+    image: 'https://placehold.co/800x500/2D1B0B/E35D14?text=News+Portal',
     year: 2024,
   },
   {
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     title: 'Booking Telegram Bot',
     description: 'Automated appointment booking bot for a beauty salon. Handles scheduling, reminders, and client management.',
     tags: ['Python', 'aiogram', 'SQLite', 'Telegram API'],
-    image: 'https://placehold.co/800x500/111111/d4ff6e?text=Booking+Bot',
+    image: 'https://placehold.co/800x500/2D1B0B/E35D14?text=Booking+Bot',
     year: 2024,
   },
   {
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: 'Restaurant Landing',
     description: 'High-converting landing page for a Riga restaurant with menu, gallery, and reservation form.',
     tags: ['React', 'Vite', 'SCSS', 'Framer Motion'],
-    image: 'https://placehold.co/800x500/111111/d4ff6e?text=Restaurant+Landing',
+    image: 'https://placehold.co/800x500/2D1B0B/E35D14?text=Restaurant+Landing',
     year: 2024,
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     title: 'Price Monitoring Script',
     description: 'Automated price tracking script that monitors competitor prices and sends daily Telegram reports.',
     tags: ['Python', 'BeautifulSoup', 'Telegram API', 'Cron'],
-    image: 'https://placehold.co/800x500/111111/d4ff6e?text=Price+Parser',
+    image: 'https://placehold.co/800x500/2D1B0B/E35D14?text=Price+Parser',
     year: 2023,
   },
   {
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     title: 'Beauty Salon Website',
     description: 'Complete multi-page website with online booking integration, pricing tables, and staff profiles.',
     tags: ['HTML', 'CSS', 'JavaScript', 'PHP'],
-    image: 'https://placehold.co/800x500/111111/d4ff6e?text=Salon+Website',
+    image: 'https://placehold.co/800x500/2D1B0B/E35D14?text=Salon+Website',
     year: 2023,
   },
   {
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     title: 'Product Catalog Bot',
     description: 'Interactive Telegram bot acting as a product catalog with cart, search, and WhatsApp checkout.',
     tags: ['Node.js', 'Telegraf', 'MongoDB'],
-    image: 'https://placehold.co/800x500/111111/d4ff6e?text=Catalog+Bot',
+    image: 'https://placehold.co/800x500/2D1B0B/E35D14?text=Catalog+Bot',
     year: 2023,
   },
 ]

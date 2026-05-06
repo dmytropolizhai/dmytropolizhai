@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
+import tanstackRouter from '@tanstack/router-plugin/vite'
 import path from 'path'
 
 export default defineConfig({
   plugins: [
-    TanStackRouterVite({ routesDirectory: './src/routes', generatedRouteTree: './src/routeTree.gen.ts' }),
+    tanstackRouter({ routesDirectory: './src/routes', generatedRouteTree: './src/routeTree.gen.ts', target: "react", autoCodeSplitting: true }),
     react(),
   ],
   resolve: { alias: { '@': path.resolve(__dirname, './src') } },
   css: { preprocessorOptions: { scss: { additionalData: '@use "@/styles/tokens" as *;\n' } } },
+  base: '/',
 })

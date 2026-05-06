@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { LANGUAGES } from '@/i18n'
 
-export function LangSwitcher() {
+export function LanguageSwitcher() {
   const { i18n } = useTranslation()
   return (
     <div className="flex items-center gap-1" role="group" aria-label="Language switcher">

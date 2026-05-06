@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
-import { LangSwitcher } from './LangSwitcher'
+import { LanguageSwitcher } from './language-switcher'
 import { ThemeToggle } from './ThemeToggle'
 import { Logo } from './logo'
 
@@ -26,7 +26,7 @@ export function NavigationBar() {
     <nav
       role="navigation"
       aria-label="Main navigation"
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300 px-6 md:px-12 py-4 md:py-5`}
+      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300 px-6 md:px-12 py-4 md:py-5"
       style={{
         borderBottom: scrolled ? '1px solid var(--color-border)' : '1px solid transparent',
         background: scrolled ? 'rgba(10,10,10,0.85)' : 'transparent',
@@ -83,7 +83,7 @@ export function NavigationBar() {
           )}
         </div>
         <div className="flex items-center gap-3" style={{ borderLeft: '1px solid var(--color-border)', paddingLeft: 16 }}>
-          <LangSwitcher />
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
       </div>

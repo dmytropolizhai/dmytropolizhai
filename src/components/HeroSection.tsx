@@ -21,6 +21,7 @@ export function HeroSection() {
         padding: '0 48px',
         position: 'relative',
         overflow: 'hidden',
+        background: 'var(--color-bg-gradient)',
       }}
     >
       {/* Grid lines */}

@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { SectionLabel } from './SectionLabel'
+import { SectionLabel } from '../SectionLabel'
 
 const TelegramIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -55,7 +55,7 @@ export function CtaSection() {
 
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
           <a
-            href="https://t.me/YOUR_USERNAME"
+            href="https://t.me/dmytropolizhai"
             aria-label={t('cta.telegram')}
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 12,
@@ -85,8 +85,8 @@ export function CtaSection() {
         {/* Secondary contacts */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
           {[
-            { href: 'mailto:your@email.com', icon: <MailIcon />, label: t('cta.email') },
-            { href: 'https://github.com/YOUR', icon: <GithubIcon />, label: t('cta.github') },
+            { href: 'mailto:dmytropolizhai@gmail.com', icon: <MailIcon />, label: t('cta.email') },
+            { href: 'https://github.com/dmytropolizhai', icon: <GithubIcon />, label: t('cta.github') },
           ].map(({ href, icon, label }) => (
             <a key={label} href={href} className="font-mono"
               style={{

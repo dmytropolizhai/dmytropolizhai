@@ -3,9 +3,17 @@ import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { LangSwitcher } from './LangSwitcher'
 import { ThemeToggle } from './ThemeToggle'
+import { Logo } from './logo'
 
-export function Nav() {
+export function NavigationBar() {
   const { t } = useTranslation()
+
+  const categories = [
+    { href: '#about', label: t('nav.approach') },
+    { href: '/projects', label: t('nav.projects'), isRoute: true },
+    { href: '#cta', label: t('nav.contact') },
+  ]
+
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -36,11 +44,11 @@ export function Nav() {
           color: "var(--color-muted)"
         }}
       >
-        Polizhai<span style={{ color: 'var(--color-accent)' }}>.</span>site
+        <Logo />
       </Link>
 
-      <div 
-        className="hidden md:flex items-center gap-8" 
+      <div
+        className="hidden md:flex items-center gap-8"
         style={{
           background: scrolled ? 'transparent' : 'var(--color-bg)',
           padding: '8px 16px',
@@ -48,11 +56,7 @@ export function Nav() {
         }}
       >
         <div className="flex gap-8">
-          {[
-            { href: '#about', label: t('nav.approach') },
-            { href: '/projects', label: t('nav.projects'), isRoute: true },
-            { href: '#cta', label: t('nav.contact') },
-          ].map(({ href, label, isRoute }) =>
+          {categories.map(({ href, label, isRoute }) =>
             isRoute ? (
               <Link
                 key={href}

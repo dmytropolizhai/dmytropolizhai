@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { SectionLabel } from '../SectionLabel'
+import { SectionLabel } from '../section-label'
 
 const revealProps = (delay = 0) => ({
   initial: { opacity: 0, y: 32 },
@@ -43,7 +43,7 @@ export function AboutSection() {
         {/* Right */}
         <motion.div {...(inView ? revealProps(0.15) : { initial: { opacity: 0, y: 32 } })} style={{ paddingTop: 8 }}>
           <p className="font-sans" style={{ fontSize: 16, color: 'var(--color-muted)', lineHeight: 1.8, marginBottom: 48 }}
-             dangerouslySetInnerHTML={{ __html: t('about.body1') + '<br/><br/>' + t('about.body2') }} />
+            dangerouslySetInnerHTML={{ __html: t('about.body1') + '<br/><br/>' + t('about.body2') }} />
 
           {/* Services list */}
           <div style={{ border: '1px solid var(--color-border)' }} role="list">

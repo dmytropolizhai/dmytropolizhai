@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
-import { SectionLabel } from '../SectionLabel'
+import { SectionLabel } from '../section-label'
 import { projects } from '@/data/projects'
 
 export function ProjectsSection() {

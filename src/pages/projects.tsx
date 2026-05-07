@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { projects } from '@/data/projects'
-import { SectionLabel } from '@/components/SectionLabel'
+import { SectionLabel } from '@/components/section-label'
 
 export function ProjectsPage() {
   const { t } = useTranslation()

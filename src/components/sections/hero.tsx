@@ -14,7 +14,7 @@ export function HeroSection() {
   return (
     <section
       aria-label="Hero"
-      className="px-6 md:px-12"
+      className="px-6 md:px-12 md:mx-2 mb-2 rounded-2xl"
       style={{
         minHeight: '100vh',
         display: 'grid',

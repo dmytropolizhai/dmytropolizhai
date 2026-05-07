@@ -29,6 +29,14 @@ export function NavigationBar() {
   const border = useMotionTemplate`rgba(var(--color-text-rgb), ${borderAlpha})`
   const blurValue = useMotionTemplate`blur(${blur}px)`
 
+  const colorValue = useTransform(progress, [0., 1], ['var(--color-surface)', 'var(--color-text)']);
+
+  const utilityClasses = {
+    color: colorValue,
+    '--color-muted': colorValue,
+    '--color-accent': colorValue,
+  } as any;
+
   const categories = [
     { href: '#about', label: t('nav.approach') },
     { href: '#cta', label: t('nav.contact') },
@@ -61,26 +69,26 @@ export function NavigationBar() {
         <div className="hidden md:flex items-center gap-8 px-4 py-2 rounded-lg">
           <div className="flex gap-8">
             {categories.map(({ href, label }) => (
-              <a
+              <motion.a
                 key={href}
                 href={href}
                 className="font-sans text-[13px] font-medium tracking-[0.04em] uppercase no-underline transition-colors duration-200 text-muted hover:text-text"
+                style={{
+                  color: colorValue
+                }}
               >
                 {label}
-              </a>
+              </motion.a>
             ))}
           </div>
 
-          <div
-            className="flex items-center gap-3"
-            style={{
-              borderLeft: '1px solid var(--color-border)',
-              paddingLeft: 16,
-            }}
+          <motion.div
+            className="flex items-center gap-3 border-l border-accent-dim pl-4"
+            style={utilityClasses}
           >
             <LanguageSwitcher />
             <ThemeToggle />
-          </div>
+          </motion.div>
         </div>
 
         {/* Mobile burger button */}

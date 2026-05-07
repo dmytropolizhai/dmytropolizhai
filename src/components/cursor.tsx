@@ -1,3 +1,4 @@
+import { useIsMobile } from '@/hooks/use-is-mobile'
 import { useEffect, useRef } from 'react'
 
 export function Cursor() {
@@ -43,20 +44,17 @@ export function Cursor() {
 
   return (
     <>
-      <div ref={dotRef} aria-hidden="true" style={{
-        position: 'fixed', width: 8, height: 8, background: 'var(--color-accent)',
-        borderRadius: '50%', pointerEvents: 'none', zIndex: 9999,
-        transform: 'translate(-50%,-50%)', transition: 'transform 0.2s',
-        top: 0, left: 0,
-      }} />
-      <div ref={ringRef} aria-hidden="true" style={{
-        position: 'fixed', width: 32, height: 32,
-        border: '1px solid rgba(212,255,110,0.4)', borderRadius: '50%',
-        pointerEvents: 'none', zIndex: 9998,
-        transform: 'translate(-50%,-50%)',
-        transition: 'width 0.3s, height 0.3s, border-color 0.3s',
-        top: 0, left: 0,
-      }} />
+      <div
+        ref={dotRef}
+        aria-hidden="true"
+        className="pointer-events-none fixed left-0 top-0 z-[9999] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--color-accent)] transition-transform duration-200"
+      />
+
+      <div
+        ref={ringRef}
+        aria-hidden="true"
+        className="pointer-events-none fixed left-0 top-0 z-[9998] h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(212,255,110,0.4)] transition-[width,height,border-color] duration-300"
+      />  
     </>
   )
 }

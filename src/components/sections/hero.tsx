@@ -14,7 +14,7 @@ export function HeroSection() {
   return (
     <section
       aria-label="Hero"
-      className="px-6 md:px-12 md:mx-2 mb-2 rounded-2xl"
+      className="px-6 md:px-12 md:mx-2 md:mb-8 md:mt-2 md:rounded-2xl"
       style={{
         minHeight: '100vh',
         display: 'grid',
@@ -86,7 +86,7 @@ export function HeroSection() {
           >
             {t('hero.cta_primary')}
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
           </a>
           <Link to="/projects" style={{
@@ -99,7 +99,7 @@ export function HeroSection() {
           >
             {t('hero.cta_ghost')}
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M7 2v10M2 7l5 5 5-5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+              <path d="M7 2v10M2 7l5 5 5-5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
             </svg>
           </Link>
         </motion.div>

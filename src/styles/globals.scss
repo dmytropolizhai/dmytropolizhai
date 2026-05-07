@@ -4,10 +4,13 @@
 
 :root, .dark {
   --color-bg: #2d1b0b;
+  --color-bg-rgb: 45, 27, 11;
   --color-surface: #3d2b1f;
+  --color-surface-rgb: 61, 43, 31;
   --color-border: #594435;
   --color-border-light: #746051;
   --color-text: #fff5eb;
+  --color-text-rgb: 255, 245, 235;
   --color-muted: #d6ccc3;
   --color-accent: #ff8c4a;
   --color-primary: #e35d14;
@@ -20,10 +23,13 @@
 
 .light {
   --color-bg: #fff5eb;
+  --color-bg-rgb: 255, 245, 235;
   --color-surface: #f8ebdc;
+  --color-surface-rgb: 248, 235, 220;
   --color-border: #e6d8ca;
   --color-border-light: #c9bdb0;
   --color-text: #2d1b0b;
+  --color-text-rgb: 45, 27, 11;
   --color-muted: #5e544b;
   --color-accent: #9c3605;
   --color-primary: #af440a;

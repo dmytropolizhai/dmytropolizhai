@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { SectionLabel } from '../section-label'
 
 const TelegramIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -19,10 +18,42 @@ const GithubIcon = () => (
   </svg>
 )
 
+const WhatsappIcon = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.45 0 .07 5.38.07 11.99c0 2.12.55 4.19 1.6 6.01L0 24l6.2-1.63a11.94 11.94 0 0 0 5.86 1.5h.01c6.61 0 11.99-5.38 11.99-11.99 0-3.2-1.25-6.21-3.54-8.4ZM12.07 21.4h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.68.97.98-3.59-.22-.37a9.36 9.36 0 0 1-1.44-5.01c0-5.19 4.22-9.41 9.41-9.41 2.51 0 4.87.98 6.65 2.76a9.36 9.36 0 0 1 2.76 6.65c0 5.19-4.22 9.41-9.41 9.41Zm5.16-7.03c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.28-.7.91-.86 1.1-.16.18-.32.21-.6.07-.28-.14-1.17-.43-2.23-1.38-.82-.73-1.38-1.63-1.54-1.9-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47l-.52-.01c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.29s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.31.23-.64.23-1.18.16-1.31-.07-.12-.25-.2-.53-.34Z" />
+  </svg>
+)
+
+const LinkedinIcon = () => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h3.96v15H.5V8Zm7.02 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.09V23h-3.96v-7.75c0-1.85-.03-4.23-2.58-4.23-2.58 0-2.98 2.01-2.98 4.1V23H7.52V8Z" />
+  </svg>
+)
+
 export function CtaSection() {
   const { t } = useTranslation()
   const ref = useRef<HTMLElement>(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
+
+  const socialLinks = [
+    { href: 'mailto:dmytropolizhai@gmail.com', icon: <MailIcon />, label: t('cta.email') },
+    { href: 'https://github.com/dmytropolizhai', icon: <GithubIcon />, label: t('cta.github') },
+    { href: 'https://wa.me/37126621435', icon: <WhatsappIcon />, label: t('cta.whatsapp') },
+    { href: "https://t.me/dmytropolizhai", icon: <TelegramIcon />, label: t('cta.telegram') },
+    { href: "https://www.linkedin.com/in/dmytropolizhai/", icon: <LinkedinIcon />, label: t('cta.linkedin') },
+  ]
 
   return (
     <section
@@ -84,10 +115,7 @@ export function CtaSection() {
 
         {/* Secondary contacts */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
-          {[
-            { href: 'mailto:dmytropolizhai@gmail.com', icon: <MailIcon />, label: t('cta.email') },
-            { href: 'https://github.com/dmytropolizhai', icon: <GithubIcon />, label: t('cta.github') },
-          ].map(({ href, icon, label }) => (
+          {socialLinks.map(({ href, icon, label }) => (
             <a key={label} href={href} className="font-mono"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 10,

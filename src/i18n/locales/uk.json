@@ -1,5 +1,9 @@
 {
-  "nav": { "approach": "Підхід", "projects": "Проєкти", "contact": "Контакт" },
+  "nav": {
+    "approach": "Підхід",
+    "projects": "Проєкти",
+    "contact": "Контакт"
+  },
   "hero": {
     "badge": "Відкритий до нових проєктів",
     "title_line1": "Сайт — це",
@@ -8,9 +12,12 @@
     "sub": "Розробляю сайти, Telegram-боти та автоматизацію для малого бізнесу.\nБез зайвого — тільки те, що працює.",
     "cta_primary": "Обговорити проєкт",
     "cta_ghost": "Переглянути роботи",
-    "stat1_value": "150€+", "stat1_label": "Макс. замовлення",
-    "stat2_value": "Top 5", "stat2_label": "GitHub Латвія",
-    "stat3_value": "4 мов.", "stat3_label": "Спілкування",
+    "stat1_value": "150€+",
+    "stat1_label": "Макс. замовлення",
+    "stat2_value": "Top 5",
+    "stat2_label": "GitHub Латвія",
+    "stat3_value": "4 мов.",
+    "stat3_label": "Спілкування",
     "scroll": "Гортати"
   },
   "about": {
@@ -20,12 +27,21 @@
     "title_prefix": "Не продаю",
     "body1": "Малому бізнесу не потрібне агентство з презентацією на 40 слайдів. Йому потрібен <strong>зрозумілий сайт</strong>, який швидко відкривається і перетворює відвідувачів на клієнтів.",
     "body2": "Я розробляю саме такі рішення — без ускладнень, вчасно, за <strong>чесною ціною</strong>.",
-    "service1": "Сайти та лендінги", "service1_tag": "Головне",
+    "service1": "Сайти та лендінги",
+    "service1_tag": "Головне",
     "service2": "Telegram-боти",
     "service3": "Скрипти та автоматизація",
-    "lang1": "Латиська", "lang2": "Російська", "lang3": "Українська", "lang4": "Англійська"
+    "lang1": "Латиська",
+    "lang2": "Російська",
+    "lang3": "Українська",
+    "lang4": "Англійська"
   },
-  "projects": { "section_label": "Проєкти", "view_all": "Всі проєкти", "view_details": "Детальніше", "back": "← Назад до проєктів" },
+  "projects": {
+    "section_label": "Проєкти",
+    "view_all": "Всі проєкти",
+    "view_details": "Детальніше",
+    "back": "← Назад до проєктів"
+  },
   "cta": {
     "eyebrow": "Готовий до роботи",
     "title_line1": "Є задача?",
@@ -37,9 +53,21 @@
     "or": "або",
     "email": "Email",
     "github": "GitHub",
-    "whatsapp": "Whatsapp"
+    "whatsapp": "WhatsApp"
   },
-  "footer": { "copy": "© 2025 Polizhai.site — Рига, Латвія", "open": "Відкритий до проєктів →" },
-  "meta": { "home_title": "Розробка сайтів і Telegram-ботів для малого бізнесу", "projects_title": "Проєкти — Polizhai.site", "project_detail_title": "Проєкт — Polizhai.site" },
-  "seo": { "h1": "Швидкі сайти для малого бізнесу, що реально працюють", "h2_websites": "Прості сайти для результату", "h2_bots": "Telegram-боти для автоматизації", "h2_scripts": "Скрипти для економії часу" }
+  "footer": {
+    "copy": "© 2025 Polizhai.site — Рига, Латвія",
+    "open": "Відкритий до проєктів →"
+  },
+  "meta": {
+    "home_title": "Розробка сайтів і Telegram-ботів для малого бізнесу",
+    "projects_title": "Проєкти — Polizhai.site",
+    "project_detail_title": "Проєкт — Polizhai.site"
+  },
+  "seo": {
+    "h1": "Швидкі сайти для малого бізнесу, що реально працюють",
+    "h2_websites": "Прості сайти для результату",
+    "h2_bots": "Telegram-боти для автоматизації",
+    "h2_scripts": "Скрипти для економії часу"
+  }
 }

@@ -21,7 +21,7 @@ export function HeroSection() {
         gridTemplateRows: '1fr auto',
         position: 'relative',
         overflow: 'hidden',
-        background: 'var(--color-bg-gradient)',
+        background: 'var(--color-surface)',
       }}
     >
       {/* Grid lines */}

@@ -29,12 +29,12 @@ export function NavigationBar() {
   const border = useMotionTemplate`rgba(var(--color-text-rgb), ${borderAlpha})`
   const blurValue = useMotionTemplate`blur(${blur}px)`
 
-  const colorValue = useTransform(progress, [0., 1], ['var(--color-surface)', 'var(--color-text)']);
+  const colorValue = useTransform(progress, [0.3, 1], ['var(--color-accent)', 'var(--color-text)']);
 
   const utilityClasses = {
     color: colorValue,
+    '--color-text': colorValue,
     '--color-muted': colorValue,
-    '--color-accent': colorValue,
   } as any;
 
   const categories = [
@@ -87,7 +87,6 @@ export function NavigationBar() {
             style={utilityClasses}
           >
             <LanguageSwitcher />
-            <ThemeToggle />
           </motion.div>
         </div>
 

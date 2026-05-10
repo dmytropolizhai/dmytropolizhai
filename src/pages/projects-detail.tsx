@@ -106,7 +106,7 @@ export function ProjectDetailPage() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: 'easeOut' }}
-          className="relative z-30 -mt-20 md:-mt-32 w-full max-w-2xl p-8 md:p-12 border border-[var(--color-border)] backdrop-blur-md bg-[rgba(var(--color-surface-rgb),0.8)] shadow-2xl rounded-sm"
+          className="relative z-30 -mt-20 md:-mt-32 w-full  p-8 md:p-12 border border-border backdrop-blur-md bg-[rgba(var(--color-surface-rgb),0.8)] shadow-2xl rounded-sm"
         >
           <h1 className="font-serif text-4xl md:text-6xl mb-6 leading-tight">
             <em className="not-italic opacity-50 block text-sm font-mono tracking-[0.2em] uppercase mb-4 italic-none">{project.year}</em>

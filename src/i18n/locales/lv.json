@@ -1,20 +1,28 @@
 {
+  "cursor": {
+    "view_project": "Skatīt projektu",
+    "view_all_projects": "Skatīt visus projektus",
+    "view_details": "Skatīt detaļas",
+    "back": "← Atpakaļ uz projektiem",
+    "view_work": "Skatīt darbus",
+    "view_services": "Skatīt pakalpojumus"
+  },
   "nav": {
     "approach": "Pieeja",
     "projects": "Projekti",
-    "contact": "Kontakts"
+    "contact": "Kontakti"
   },
   "hero": {
     "badge": "Atvērts jauniem projektiem",
     "title": {
       "line1": "Mājaslapa ir",
-      "line2": "biznesa seja.",
+      "line2": "jūsu biznesa seja.",
       "muted": "Padarīsim to spēcīgu."
     },
-    "sub": "Izstrādāju mājas lapas, Telegram botus un automatizāciju mazajam biznesam.\nBez liekiem vārdiem — tikai tas, kas strādā.",
+    "sub": "Es izstrādāju mājaslapas, Telegram botus un automatizāciju mazajiem uzņēmumiem.\nBez lieka — tikai tas, kas strādā un piesaista klientus.",
     "cta": {
       "primary": "Apspriest projektu",
-      "ghost": "Skatīt darbus"
+      "ghost": "Skatīt manus darbus"
     },
     "stats": [
       {
@@ -23,26 +31,26 @@
       },
       {
         "value": "Top 5",
-        "label": "GitHub Latvija"
+        "label": "GitHub Latvijā"
       },
       {
         "value": "4 val.",
-        "label": "Valodas"
+        "label": "Komunikācija"
       }
     ],
     "scroll": "Ritināt",
     "badges": {
       "fast": {
-        "label": "Ātri izpilde",
-        "desc": "Pirmā versija 7 dienu laikā"
+        "label": "Ātra piegāde",
+        "desc": "Pirmā versija online 7 dienu laikā"
       },
       "result": {
-        "label": "Rezultāts pirmkārt",
-        "desc": "Klienti un konversijas, ne tikai diz."
+        "label": "Fokuss uz rezultātu",
+        "desc": "Klienti un konversijas, ne tikai dizains"
       },
       "support": {
-        "label": "Atbalsts",
-        "desc": "Esmu klāt arī pēc laišanas"
+        "label": "Pastāvīgs atbalsts",
+        "desc": "Es palieku pieejams arī pēc palaišanas"
       },
       "langs": {
         "label": "4 valodas",
@@ -53,13 +61,13 @@
   "about": {
     "section_label": "Pieeja",
     "title": {
-      "line1": "Risinu uzdevumus.",
-      "line2": "gaisu.",
-      "prefix": "Nepārdodu"
+      "line1": "Lai strādā,",
+      "line2": "tad uzlabo",
+      "prefix": ""
     },
-    "body1": "Mazajam biznesam nav vajadzīga aģentūra ar 40 slaidu prezentāciju. Tam vajag <strong>saprotamu mājas lapu</strong>, kas ātri ielādējas un pārvērš apmeklētājus klientos.",
-    "body2": "Es izstrādāju tieši šādus risinājumus — bez sarežģīšanas, laikā un par <strong>godīgu cenu</strong>.",
-    "service1": "Mājas lapas un landing pages",
+    "body1": "Mazam biznesam nav vajadzīga aģentūra ar 40 slaidu prezentāciju. Tam vajag <strong>skaidru mājaslapu</strong>, kas ielādējas ātri, izskatās profesionāli un pārvērš apmeklētājus klientos.",
+    "body2": "Tieši to es arī veidoju — bez liekas sarežģīšanas, laikā un par <strong>godīgu cenu</strong>. Jūs aprakstāt uzdevumu, es to atrisinu.",
+    "service1": "Mājaslapas un landing pages",
     "service1_tag": "Galvenais",
     "service2": "Telegram boti",
     "service3": "Skripti un automatizācija",
@@ -70,8 +78,8 @@
   },
   "projects": {
     "section_label": "Projekti",
-    "view_all": "Visi projekti",
-    "view_details": "Skatīt",
+    "view_all": "Skatīt visus projektus",
+    "view_details": "Skatīt detaļas",
     "back": "← Atpakaļ uz projektiem",
     "problem_label": "Problēma",
     "solution_label": "Risinājums",
@@ -79,38 +87,43 @@
     "items": {
       "curio-today": {
         "title": "Curio Today",
-        "description": "Moderna kurācijas platforma digitālai atklāšanai un pārdomātai nišas interešu izpētei.",
-        "problem": "Digitālais troksnis apgrūtina augstas kvalitātes, kurēta satura atrašanu. Algoritmi bieži vien prioritizē iesaisti, nevis vērtību.",
-        "solution": "Es izveidoju platformu, kas koncentrējas uz cilvēka kurētām kolekcijām, izmantojot minimālistisku saskarni un Framer Motion taktīlai digitālai pieredzei.",
+        "description": "Mūsdienīga platforma digitālai atklāšanai un nišas interešu pārdomātai izpētei.",
+        "problem": "Digitālais troksnis apgrūtina kvalitatīva satura atrašanu. Lietotāji ir pārpildīti ar algoritmu lentēm, kas prioritizē iesaisti, nevis vērtību.",
+        "solution": "Es izveidoju platformu ar cilvēku veidotām kolekcijām, izmantojot minimālistisku UI, lai samazinātu kognitīvo slodzi, un Framer Motion, lai radītu “taustāmu” digitālo pieredzi.",
         "statistics": [
-          { "label": "Aktīvie lietotāji", "value": "2.5k+" },
-          { "label": "Vid. sesija", "value": "8.4m" },
-          { "label": "Kurācijas līmenis", "value": "94%" }
+          {
+            "label": "Aktīvie lietotāji",
+            "value": "2.5k+"
+          },
+          {
+            "label": "Vid. sesija",
+            "value": "8.4m"
+          },
+          {
+            "label": "Kurācijas līmenis",
+            "value": "94%"
+          }
         ]
       },
-      "news-portal": {
-        "title": "Ziņu portāls",
-        "description": "Pilnvērtīga ziņu platforma ar admin paneli, kategorijām un SEO optimizāciju vietējam Latvijas medijam."
-      },
-      "booking-bot": {
-        "title": "Rezervācijas Telegram bots",
-        "description": "Automatizēts vizīšu rezervācijas bots skaistumkopšanas salonam. Apstrādā grafikus, atgādinājumus un klientus."
-      },
-      "landing-cafe": {
-        "title": "Restorāna lapa",
-        "description": "Augstas konversijas lapa Rīgas restorānam ar ēdienkarti, galeriju un rezervācijas formu."
-      },
-      "price-parser": {
-        "title": "Cenu monitoringa skripts",
-        "description": "Automatizēts skripts konkurentu cenu izsekošanai ar ikdienas Telegram atskaitēm."
-      },
-      "salon-site": {
-        "title": "Salona mājaslapa",
-        "description": "Pilna mājaslapa ar tiešsaistes rezervāciju integrāciju, cenu tabulām un darbinieku profiliem."
-      },
-      "catalog-bot": {
-        "title": "Preču kataloga bots",
-        "description": "Interaktīvs Telegram bots, kas darbojas kā preču katalogs ar grozu, meklēšanu un apmaksu WhatsApp."
+      "studio": {
+        "title": "Stundio",
+        "description": "Mūsdienīga platforma digitālai atklāšanai un nišas interešu pārdomātai izpētei.",
+        "problem": "Digitālais troksnis apgrūtina kvalitatīva satura atrašanu. Lietotāji ir pārpildīti ar algoritmu lentēm, kas prioritizē iesaisti, nevis vērtību.",
+        "solution": "Es izveidoju platformu ar cilvēku veidotām kolekcijām, izmantojot minimālistisku UI, lai samazinātu kognitīvo slodzi, un Framer Motion, lai radītu “taustāmu” digitālo pieredzi.",
+        "statistics": [
+          {
+            "label": "Aktīvie lietotāji",
+            "value": "2.5k+"
+          },
+          {
+            "label": "Vid. sesija",
+            "value": "8.4m"
+          },
+          {
+            "label": "Kurācijas līmenis",
+            "value": "94%"
+          }
+        ]
       }
     }
   },
@@ -118,30 +131,31 @@
     "eyebrow": "Gatavs darbam",
     "title": {
       "line1": "Ir uzdevums?",
-      "line2": "Atrisināsim."
+      "line2": "Atrisināsim to."
     },
-    "sub": "Aprakstiet vajadzību — atbildēšu dažu stundu laikā.\nPirmā konsultācija ir bezmaksas.",
+    "sub": "Aprakstiet, kas jums nepieciešams — es atbildēšu dažu stundu laikā.\nPirmā konsultācija ir bez maksas.",
     "telegram": "Rakstīt Telegram",
     "response_note": "Parasti atbildu",
     "response_time": "2–3 stundu laikā",
     "or": "vai",
     "email": "E-pasts",
     "github": "GitHub",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn"
   },
   "footer": {
     "copy": "© 2025 Polizhai.site — Rīga, Latvija",
     "open": "Atvērts projektiem →"
   },
   "meta": {
-    "home_title": "Mājas lapu un Telegram botu izstrāde mazajam biznesam",
+    "home_title": "Mājaslapu izstrāde un Telegram boti mazajam biznesam",
     "projects_title": "Projekti — Polizhai.site",
     "project_detail_title": "Projekts — Polizhai.site"
   },
   "seo": {
-    "h1": "Ātrās mājas lapas mazajam biznesam",
-    "h2_websites": "Vienkāršas lapas rezultātiem",
-    "h2_bots": "Telegram boti darbplūsmas automatizācijai",
-    "h2_scripts": "Skripti laika ietaupīšanai"
+    "h1": "Ātras mājaslapas mazajam biznesam, kas tiešām strādā",
+    "h2_websites": "Vienkāršas mājaslapas, kas veidotas rezultātam",
+    "h2_bots": "Telegram boti darba automatizācijai",
+    "h2_scripts": "Pielāgoti skripti laika taupīšanai un manuālā darba samazināšanai"
   }
 }

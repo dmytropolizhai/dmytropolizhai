@@ -38,8 +38,8 @@ export function NavigationBar() {
   } as any;
 
   const categories = [
-    { href: '#about', label: t('nav.approach') },
-    { href: '#cta', label: t('nav.contact') },
+    { href: '/#about', label: t('nav.approach') },
+    { href: '/#cta', label: t('nav.contact') },
   ]
 
   const toggleMenu = useCallback(() => setMenuOpen((v) => !v), [])

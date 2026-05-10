@@ -14,8 +14,14 @@ export function HeroSection() {
     return (
         <section
             aria-label="Hero"
-            className="px-6 md:px-12 md:mx-2 md:mb-8 md:mt-2 md:rounded-2xl min-h-screen grid grid-rows-[1fr_auto] relative overflow-hidden bg-surface"
+            className="px-6 md:px-12 md:mx-2 md:mb-8 md:mt-2 min-h-screen grid grid-rows-[1fr_auto] relative overflow-hidden rounded-3xl"
         >
+            <div
+                style={{
+                    background: 'var(--color-bg-gradient)',
+                }}
+                className="absolute inset-0 blur-3xl brightness-50 opacity-30 mix-blend-screen"
+            />
             <GridLines />
             <Glow />
 

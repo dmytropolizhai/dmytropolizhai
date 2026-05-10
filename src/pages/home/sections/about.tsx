@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { SectionLabel } from '../section-label'
+import { SectionLabel } from '@/components/section-label'
 
 const revealProps = (delay = 0) => ({
   initial: { opacity: 0, y: 32 },

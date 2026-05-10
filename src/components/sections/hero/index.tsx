@@ -4,8 +4,6 @@ import { Link } from '@tanstack/react-router'
 
 import { Glow, GridLines } from './effects'
 import { fadeUp } from './animations'
-import { Badge } from './components/badge'
-import { StatsBar } from './components/stats-bar'
 import { FloatingBadges } from './components/floating-badges'
 import { useIsMobile } from '@/hooks/use-is-mobile'
 

@@ -116,7 +116,7 @@ export function Cursor() {
       <div
         ref={textRef}
         aria-hidden="true"
-        className="bg-accent-dim px-4 py-1 rounded-full pointer-events-none fixed left-0 top-0 z-[9999] -translate-x-1/2 -translate-y-1/2 select-none transition-[transform,opacity] duration-300 text-sm font-semibold text-accent whitespace-nowrap"
+        className="bg-accent-dim px-4 py-1 pointer-events-none fixed left-0 top-0 z-[9999] -translate-x-1/2 -translate-y-1/2 select-none transition-[transform,opacity] duration-300 text-sm font-semibold text-accent whitespace-nowrap"
         style={{ opacity: 0 }}
       />
     </>

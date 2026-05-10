@@ -1,0 +1,1 @@
+import{u as s,r as t,i as e,j as o,O as n}from"./index-DJ009Ylr.js";function c(){const{locale:a}=s({from:"/$locale"});return t.useEffect(()=>{e.language!==a&&e.changeLanguage(a)},[a]),o.jsx(n,{})}export{c as component};

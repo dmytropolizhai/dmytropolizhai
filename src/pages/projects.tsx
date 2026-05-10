@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Link } from '@tanstack/react-router'
+import { Link, useParams } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { projects } from '@/data/projects'
 import { SectionLabel } from '@/components/section-label'
@@ -9,6 +9,7 @@ export function ProjectsPage() {
   const { t } = useTranslation()
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true })
+  const { locale } = useParams({ strict: false }) as { locale?: string }
 
   return (
     <div className="container pt-40">
@@ -34,8 +35,8 @@ export function ProjectsPage() {
             transition={{ duration: 0.6, delay: i * 0.07, ease: 'easeOut' }}
           >
             <Link
-              to="/projects/$id"
-              params={{ id: project.id }}
+              to="/$locale/projects/$id"
+              params={{ locale: locale || 'en', id: project.id }}
               style={{ display: 'block', textDecoration: 'none', border: '1px solid var(--color-border)', transition: 'border-color 0.2s, transform 0.2s' }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-border-light)'; e.currentTarget.style.transform = 'translateY(-4px)' }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)'; e.currentTarget.style.transform = '' }}

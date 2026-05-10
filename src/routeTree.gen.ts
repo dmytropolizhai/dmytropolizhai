@@ -9,13 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ProjectsRouteImport } from './routes/projects'
+import { Route as LocaleRouteImport } from './routes/$locale'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ProjectsIdRouteImport } from './routes/projects.$id'
+import { Route as LocaleIndexRouteImport } from './routes/$locale.index'
+import { Route as LocaleProjectsRouteImport } from './routes/$locale.projects'
+import { Route as LocaleProjectsIndexRouteImport } from './routes/$locale.projects.index'
+import { Route as LocaleProjectsIdRouteImport } from './routes/$locale.projects.$id'
 
-const ProjectsRoute = ProjectsRouteImport.update({
-  id: '/projects',
-  path: '/projects',
+const LocaleRoute = LocaleRouteImport.update({
+  id: '/$locale',
+  path: '/$locale',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -23,48 +26,83 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProjectsIdRoute = ProjectsIdRouteImport.update({
+const LocaleIndexRoute = LocaleIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LocaleRoute,
+} as any)
+const LocaleProjectsRoute = LocaleProjectsRouteImport.update({
+  id: '/projects',
+  path: '/projects',
+  getParentRoute: () => LocaleRoute,
+} as any)
+const LocaleProjectsIndexRoute = LocaleProjectsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LocaleProjectsRoute,
+} as any)
+const LocaleProjectsIdRoute = LocaleProjectsIdRouteImport.update({
   id: '/$id',
   path: '/$id',
-  getParentRoute: () => ProjectsRoute,
+  getParentRoute: () => LocaleProjectsRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/projects': typeof ProjectsRouteWithChildren
-  '/projects/$id': typeof ProjectsIdRoute
+  '/$locale': typeof LocaleRouteWithChildren
+  '/$locale/projects': typeof LocaleProjectsRouteWithChildren
+  '/$locale/': typeof LocaleIndexRoute
+  '/$locale/projects/$id': typeof LocaleProjectsIdRoute
+  '/$locale/projects/': typeof LocaleProjectsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/projects': typeof ProjectsRouteWithChildren
-  '/projects/$id': typeof ProjectsIdRoute
+  '/$locale': typeof LocaleIndexRoute
+  '/$locale/projects/$id': typeof LocaleProjectsIdRoute
+  '/$locale/projects': typeof LocaleProjectsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/projects': typeof ProjectsRouteWithChildren
-  '/projects/$id': typeof ProjectsIdRoute
+  '/$locale': typeof LocaleRouteWithChildren
+  '/$locale/projects': typeof LocaleProjectsRouteWithChildren
+  '/$locale/': typeof LocaleIndexRoute
+  '/$locale/projects/$id': typeof LocaleProjectsIdRoute
+  '/$locale/projects/': typeof LocaleProjectsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/projects' | '/projects/$id'
+  fullPaths:
+    | '/'
+    | '/$locale'
+    | '/$locale/projects'
+    | '/$locale/'
+    | '/$locale/projects/$id'
+    | '/$locale/projects/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/projects' | '/projects/$id'
-  id: '__root__' | '/' | '/projects' | '/projects/$id'
+  to: '/' | '/$locale' | '/$locale/projects/$id' | '/$locale/projects'
+  id:
+    | '__root__'
+    | '/'
+    | '/$locale'
+    | '/$locale/projects'
+    | '/$locale/'
+    | '/$locale/projects/$id'
+    | '/$locale/projects/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ProjectsRoute: typeof ProjectsRouteWithChildren
+  LocaleRoute: typeof LocaleRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/projects': {
-      id: '/projects'
-      path: '/projects'
-      fullPath: '/projects'
-      preLoaderRoute: typeof ProjectsRouteImport
+    '/$locale': {
+      id: '/$locale'
+      path: '/$locale'
+      fullPath: '/$locale'
+      preLoaderRoute: typeof LocaleRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -74,31 +112,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/projects/$id': {
-      id: '/projects/$id'
+    '/$locale/': {
+      id: '/$locale/'
+      path: '/'
+      fullPath: '/$locale/'
+      preLoaderRoute: typeof LocaleIndexRouteImport
+      parentRoute: typeof LocaleRoute
+    }
+    '/$locale/projects': {
+      id: '/$locale/projects'
+      path: '/projects'
+      fullPath: '/$locale/projects'
+      preLoaderRoute: typeof LocaleProjectsRouteImport
+      parentRoute: typeof LocaleRoute
+    }
+    '/$locale/projects/': {
+      id: '/$locale/projects/'
+      path: '/'
+      fullPath: '/$locale/projects/'
+      preLoaderRoute: typeof LocaleProjectsIndexRouteImport
+      parentRoute: typeof LocaleProjectsRoute
+    }
+    '/$locale/projects/$id': {
+      id: '/$locale/projects/$id'
       path: '/$id'
-      fullPath: '/projects/$id'
-      preLoaderRoute: typeof ProjectsIdRouteImport
-      parentRoute: typeof ProjectsRoute
+      fullPath: '/$locale/projects/$id'
+      preLoaderRoute: typeof LocaleProjectsIdRouteImport
+      parentRoute: typeof LocaleProjectsRoute
     }
   }
 }
 
-interface ProjectsRouteChildren {
-  ProjectsIdRoute: typeof ProjectsIdRoute
+interface LocaleProjectsRouteChildren {
+  LocaleProjectsIdRoute: typeof LocaleProjectsIdRoute
+  LocaleProjectsIndexRoute: typeof LocaleProjectsIndexRoute
 }
 
-const ProjectsRouteChildren: ProjectsRouteChildren = {
-  ProjectsIdRoute: ProjectsIdRoute,
+const LocaleProjectsRouteChildren: LocaleProjectsRouteChildren = {
+  LocaleProjectsIdRoute: LocaleProjectsIdRoute,
+  LocaleProjectsIndexRoute: LocaleProjectsIndexRoute,
 }
 
-const ProjectsRouteWithChildren = ProjectsRoute._addFileChildren(
-  ProjectsRouteChildren,
+const LocaleProjectsRouteWithChildren = LocaleProjectsRoute._addFileChildren(
+  LocaleProjectsRouteChildren,
 )
+
+interface LocaleRouteChildren {
+  LocaleProjectsRoute: typeof LocaleProjectsRouteWithChildren
+  LocaleIndexRoute: typeof LocaleIndexRoute
+}
+
+const LocaleRouteChildren: LocaleRouteChildren = {
+  LocaleProjectsRoute: LocaleProjectsRouteWithChildren,
+  LocaleIndexRoute: LocaleIndexRoute,
+}
+
+const LocaleRouteWithChildren =
+  LocaleRoute._addFileChildren(LocaleRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ProjectsRoute: ProjectsRouteWithChildren,
+  LocaleRoute: LocaleRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -1,6 +1,6 @@
-import { Link } from '@tanstack/react-router'
+import { Link, useParams } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import {
   motion,
   useScroll,
@@ -8,15 +8,14 @@ import {
   useMotionTemplate,
 } from 'framer-motion'
 import { LanguageSwitcher } from '@/components/language-switcher'
-import { ThemeToggle } from '@/components/theme-toggle'
 import { Logo } from '@/components/logo'
 import { BurgerIcon, BurgerMenu } from './burger-menu'
-
 
 export function NavigationBar() {
   const { t } = useTranslation()
   const { scrollYProgress } = useScroll()
   const [menuOpen, setMenuOpen] = useState(false)
+  const { locale } = useParams({ strict: false }) as { locale?: string }
 
   const progress = useTransform(scrollYProgress, [0, 1], [0, 0.8], { clamp: true })
 
@@ -37,10 +36,10 @@ export function NavigationBar() {
     '--color-muted': colorValue,
   } as any;
 
-  const categories = [
-    { href: '/#about', label: t('nav.approach') },
-    { href: '/#cta', label: t('nav.contact') },
-  ]
+  const categories = useMemo(() => [
+    { href: `/${locale}#about`, label: t('nav.approach') },
+    { href: `/${locale}#cta`, label: t('nav.contact') },
+  ], [locale, t])
 
   const toggleMenu = useCallback(() => setMenuOpen((v) => !v), [])
   const closeMenu = useCallback(() => setMenuOpen(false), [])
@@ -58,7 +57,8 @@ export function NavigationBar() {
         }}
       >
         <Link
-          to="/"
+          to="/$locale/"
+          params={{ locale: locale || 'en' }}
           aria-label="Home"
           className="font-mono text-[13px] tracking-[0.05em] no-underline transition-colors duration-200 px-4 py-2 rounded-lg text-text hover:bg-accent-dim"
         >

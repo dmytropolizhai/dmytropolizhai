@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
-import { motion, useScroll, useSpring } from 'framer-motion'
-import { Link } from '@tanstack/react-router'
+import { useScroll, useSpring } from 'framer-motion'
+import { Link, useParams } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { SectionLabel } from '@/components/section-label'
 import { projects } from '@/data/projects'
@@ -14,6 +14,7 @@ export function ProjectsSection() {
   const [isDragging, setIsDragging] = useState(false)
   const [startX, setStartX] = useState(0)
   const [scrollLeft, setScrollLeft] = useState(0)
+  const { locale } = useParams({ strict: false }) as { locale?: string }
 
   // Auto-scroll logic
   useEffect(() => {
@@ -89,7 +90,8 @@ export function ProjectsSection() {
       <div className="px-6 md:px-12 mb-16 flex justify-between items-end">
         <SectionLabel index="03" label={t('projects.section_label')} />
         {/* <Link
-          to="/projects"
+          to="/$locale/projects/"
+          params={{ locale: locale || 'en' }}
           className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 no-underline"
         >
           {t('projects.view_all')} →
@@ -125,8 +127,8 @@ export function ProjectsSection() {
               }}
             >
               <Link
-                to="/projects/$id"
-                params={{ id: project.id }}
+                to="/$locale/projects/$id"
+                params={{ locale: locale || 'en', id: project.id }}
                 className={`block no-underline group/card ${isDragging ? 'pointer-events-none' : ''}`}
               >
                 <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-[var(--color-border)] transition-colors duration-500 group-hover/card:border-[var(--color-border-light)]">

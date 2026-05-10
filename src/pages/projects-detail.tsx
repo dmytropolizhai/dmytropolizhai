@@ -5,13 +5,19 @@ import { projects } from '@/data/projects'
 
 export function ProjectDetailPage() {
   const { t } = useTranslation()
-  const { id } = useParams({ from: '/projects/$id' })
+  const { id, locale } = useParams({ from: '/$locale/projects/$id' })
   const project = projects.find(p => p.id === id)
 
   if (!project) return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-32">
       <p className="font-mono text-[var(--color-muted)] mb-4">Project not found.</p>
-      <Link to="/projects" className="text-[var(--color-accent)] underline underline-offset-4">{t('projects.back')}</Link>
+      <Link
+        to="/$locale/projects/"
+        params={{ locale: locale }}
+        className="text-[var(--color-accent)] underline underline-offset-4"
+      >
+        {t('projects.back')}
+      </Link>
     </div>
   )
 
@@ -25,7 +31,12 @@ export function ProjectDetailPage() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Link to="/#projects" className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 mb-12 inline-block">
+        <Link
+          to="/$locale/"
+          params={{ locale: locale }}
+          hash="projects"
+          className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 mb-12 inline-block"
+        >
           {t('projects.back')}
         </Link>
       </motion.div>

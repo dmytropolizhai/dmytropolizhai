@@ -35,8 +35,8 @@ export function AboutSection() {
         {/* Left */}
         <motion.div {...(inView ? revealProps(0) : { initial: { opacity: 0, y: 32 } })}>
           <h2 id="about-heading" className="font-serif" style={{ fontSize: 'clamp(36px,4vw,56px)', lineHeight: 1.1, fontWeight: 400, letterSpacing: '-0.01em' }}>
-            {t('about.title_line1')}<br />
-            {t('about.title_prefix')} <em style={{ fontStyle: 'italic', color: 'var(--color-accent)' }}>{t('about.title_em')}</em>
+            {t('about.title.line1')}<br />
+            {t('about.title.prefix')} <em style={{ fontStyle: 'italic', color: 'var(--color-accent)' }}>{t('about.title.line2')}</em>
           </h2>
         </motion.div>
 

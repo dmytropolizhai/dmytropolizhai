@@ -6,12 +6,16 @@
   },
   "hero": {
     "badge": "Open for new projects",
-    "title_line1": "A website is",
-    "title_em": "your business face.",
-    "title_muted": "Let's make it strong.",
+    "title": {
+      "line1": "A website is",
+      "line2": "your business face.",
+      "muted": "Let's make it strong."
+    },
     "sub": "I build websites, Telegram bots and automation for small businesses.\nNo fluff — only what works and brings clients.",
-    "cta_primary": "Discuss a project",
-    "cta_ghost": "View my work",
+    "cta": {
+      "primary": "Discuss a project",
+      "ghost": "View my work"
+    },
     "stats": [
       {
         "value": "150€+",
@@ -26,13 +30,33 @@
         "label": "Communication"
       }
     ],
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "badges": {
+      "fast": {
+        "label": "Fast delivery",
+        "desc": "First version live within 7 days"
+      },
+      "result": {
+        "label": "Result focused",
+        "desc": "Clients & conversions, not just design"
+      },
+      "support": {
+        "label": "Ongoing support",
+        "desc": "I'm here after launch too"
+      },
+      "langs": {
+        "label": "4 languages",
+        "desc": "LV · RU · UK · EN"
+      }
+    }
   },
   "about": {
     "section_label": "Approach",
-    "title_line1": "I solve problems.",
-    "title_em": "air.",
-    "title_prefix": "Not selling",
+    "title": {
+      "line1": "Make it run,",
+      "line2": "make it right",
+      "prefix": "make"
+    },
     "body1": "A small business doesn't need an agency with a 40-slide deck. It needs a <strong>clear website</strong> that loads fast, looks professional, and turns visitors into clients.",
     "body2": "I build exactly that — no over-engineering, on time, with an <strong>honest price</strong>. You describe the task, I solve it.",
     "service1": "Websites & landing pages",
@@ -52,8 +76,10 @@
   },
   "cta": {
     "eyebrow": "Ready to work",
-    "title_line1": "Got a task?",
-    "title_em": "Let's solve it.",
+    "title": {
+      "line1": "Got a task?",
+      "line2": "Let's solve it."
+    },
     "sub": "Describe what you need — I'll reply within a few hours.\nFirst consultation is free.",
     "telegram": "Write on Telegram",
     "response_note": "Usually reply within",

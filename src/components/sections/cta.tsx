@@ -77,8 +77,8 @@ export function CtaSection() {
           {t('cta.eyebrow')}
         </p>
         <h2 id="cta-heading" className="font-serif" style={{ fontSize: 'clamp(40px,5vw,64px)', lineHeight: 1.05, fontWeight: 400, letterSpacing: '-0.02em', marginBottom: 20 }}>
-          {t('cta.title_line1')}<br />
-          <em style={{ fontStyle: 'italic', color: 'var(--color-accent)' }}>{t('cta.title_em')}</em>
+          {t('cta.title.line1')}<br />
+          <em style={{ fontStyle: 'italic', color: 'var(--color-accent)' }}>{t('cta.title.line2')}</em>
         </h2>
         <p className="font-mono" style={{ fontSize: 13, color: 'var(--color-muted)', lineHeight: 1.7, marginBottom: 48, whiteSpace: 'pre-line' }}>
           {t('cta.sub')}

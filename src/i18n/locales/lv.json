@@ -6,12 +6,16 @@
   },
   "hero": {
     "badge": "Atvērts jauniem projektiem",
-    "title_line1": "Mājaslapa ir",
-    "title_em": "biznesa seja.",
-    "title_muted": "Padarīsim to spēcīgu.",
+    "title": {
+      "line1": "Mājaslapa ir",
+      "line2": "biznesa seja.",
+      "muted": "Padarīsim to spēcīgu."
+    },
     "sub": "Izstrādāju mājas lapas, Telegram botus un automatizāciju mazajam biznesam.\nBez liekiem vārdiem — tikai tas, kas strādā.",
-    "cta_primary": "Apspriest projektu",
-    "cta_ghost": "Skatīt darbus",
+    "cta": {
+      "primary": "Apspriest projektu",
+      "ghost": "Skatīt darbus"
+    },
     "stats": [
       {
         "value": "150€+",
@@ -26,13 +30,33 @@
         "label": "Valodas"
       }
     ],
-    "scroll": "Ritināt"
+    "scroll": "Ritināt",
+    "badges": {
+      "fast": {
+        "label": "Ātri izpilde",
+        "desc": "Pirmā versija 7 dienu laikā"
+      },
+      "result": {
+        "label": "Rezultāts pirmkārt",
+        "desc": "Klienti un konversijas, ne tikai diz."
+      },
+      "support": {
+        "label": "Atbalsts",
+        "desc": "Esmu klāt arī pēc laišanas"
+      },
+      "langs": {
+        "label": "4 valodas",
+        "desc": "LV · RU · UK · EN"
+      }
+    }
   },
   "about": {
     "section_label": "Pieeja",
-    "title_line1": "Risinu uzdevumus.",
-    "title_em": "gaisu.",
-    "title_prefix": "Nepārdodu",
+    "title": {
+      "line1": "Risinu uzdevumus.",
+      "line2": "gaisu.",
+      "prefix": "Nepārdodu"
+    },
     "body1": "Mazajam biznesam nav vajadzīga aģentūra ar 40 slaidu prezentāciju. Tam vajag <strong>saprotamu mājas lapu</strong>, kas ātri ielādējas un pārvērš apmeklētājus klientos.",
     "body2": "Es izstrādāju tieši šādus risinājumus — bez sarežģīšanas, laikā un par <strong>godīgu cenu</strong>.",
     "service1": "Mājas lapas un landing pages",
@@ -52,8 +76,10 @@
   },
   "cta": {
     "eyebrow": "Gatavs darbam",
-    "title_line1": "Ir uzdevums?",
-    "title_em": "Atrisināsim.",
+    "title": {
+      "line1": "Ir uzdevums?",
+      "line2": "Atrisināsim."
+    },
     "sub": "Aprakstiet vajadzību — atbildēšu dažu stundu laikā.\nPirmā konsultācija ir bezmaksas.",
     "telegram": "Rakstīt Telegram",
     "response_note": "Parasti atbildu",

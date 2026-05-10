@@ -11,7 +11,7 @@ export function ProjectsPage() {
   const inView = useInView(ref, { once: true })
 
   return (
-    <div style={{ paddingTop: 120, minHeight: '100vh' }}>
+    <div className="container pt-40">
       <div style={{ padding: '80px 48px 0' }}>
         <SectionLabel index="03" label={t('projects.section_label')} />
         <motion.h1

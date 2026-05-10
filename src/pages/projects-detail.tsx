@@ -25,7 +25,7 @@ export function ProjectDetailPage() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Link to="/projects" className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 mb-12 inline-block">
+        <Link to="/#projects" className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 mb-12 inline-block">
           {t('projects.back')}
         </Link>
       </motion.div>
@@ -88,7 +88,7 @@ export function ProjectDetailPage() {
           <p className="font-sans text-lg md:text-xl text-[var(--color-muted)] leading-relaxed">
             {t(`projects.items.${project.id}.description`)}
           </p>
-          
+
           <div className="flex flex-wrap gap-3 mt-8">
             {project.tags.map(tag => (
               <span key={tag} className="font-mono text-[10px] px-3 py-1 border border-[var(--color-border-light)] text-[var(--color-muted)] uppercase tracking-wider">

@@ -51,7 +51,6 @@ export function CtaSection() {
     { href: 'mailto:dmytropolizhai@gmail.com', icon: <MailIcon />, label: t('cta.email') },
     { href: 'https://github.com/dmytropolizhai', icon: <GithubIcon />, label: t('cta.github') },
     { href: 'https://wa.me/37126621435', icon: <WhatsappIcon />, label: t('cta.whatsapp') },
-    { href: "https://t.me/dmytropolizhai", icon: <TelegramIcon />, label: t('cta.telegram') },
     { href: "https://www.linkedin.com/in/dmytropolizhai/", icon: <LinkedinIcon />, label: t('cta.linkedin') },
   ]
 

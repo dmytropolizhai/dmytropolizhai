@@ -11,6 +11,7 @@ export function ProjectsSection() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [isHovered, setIsHovered] = useState(false)
   const [isMouseDown, setIsMouseDown] = useState(false)
+  const [isDragging, setIsDragging] = useState(false)
   const [startX, setStartX] = useState(0)
   const [scrollLeft, setScrollLeft] = useState(0)
 
@@ -43,12 +44,15 @@ export function ProjectsSection() {
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!containerRef.current) return
     setIsMouseDown(true)
+    setIsDragging(false)
     setStartX(e.pageX - containerRef.current.offsetLeft)
     setScrollLeft(containerRef.current.scrollLeft)
   }
 
   const handleMouseUp = () => {
     setIsMouseDown(false)
+    // Delay resetting isDragging to prevent the click from firing after a drag
+    setTimeout(() => setIsDragging(false), 50)
   }
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -56,6 +60,12 @@ export function ProjectsSection() {
     e.preventDefault()
     const x = e.pageX - containerRef.current.offsetLeft
     const walk = (x - startX) * 2 // Scroll speed multiplier
+
+    // Set isDragging if we moved more than a small threshold
+    if (Math.abs(x - startX) > 5) {
+      setIsDragging(true)
+    }
+
     containerRef.current.scrollLeft = scrollLeft - walk
   }
 
@@ -78,12 +88,12 @@ export function ProjectsSection() {
     >
       <div className="px-6 md:px-12 mb-16 flex justify-between items-end">
         <SectionLabel index="03" label={t('projects.section_label')} />
-        <Link
+        {/* <Link
           to="/projects"
           className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 no-underline"
         >
           {t('projects.view_all')} →
-        </Link>
+        </Link> */}
       </div>
 
       {/* Carousel Container */}
@@ -95,6 +105,7 @@ export function ProjectsSection() {
         onMouseLeave={() => {
           setIsHovered(false)
           setIsMouseDown(false)
+          setIsDragging(false)
         }}
       >
         <div
@@ -116,7 +127,7 @@ export function ProjectsSection() {
               <Link
                 to="/projects/$id"
                 params={{ id: project.id }}
-                className={`block no-underline group/card ${isMouseDown ? 'pointer-events-none' : ''}`}
+                className={`block no-underline group/card ${isDragging ? 'pointer-events-none' : ''}`}
               >
                 <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-[var(--color-border)] transition-colors duration-500 group-hover/card:border-[var(--color-border-light)]">
                   <img

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { Link } from '@tanstack/react-router'
 
 import { Glow, GridLines } from './effects'
 import { fadeUp } from './animations'
@@ -77,6 +76,16 @@ export function HeroSection() {
                             {t('hero.cta.primary')}
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                            </svg>
+                        </a>
+
+                        <a
+                            href="#projects"
+                            className="font-mono text-[13px] text-muted no-underline flex items-center gap-2 tracking-[0.04em] transition-colors duration-200 hover:text-text"
+                        >
+                            {t('hero.cta.ghost')}
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                <path d="M7 2v10M2 7l5 5 5-5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
                             </svg>
                         </a>
                     </motion.div>

@@ -12,13 +12,13 @@ export function ProjectDetailPage() {
     <div className="flex flex-col items-center justify-center min-h-screen pt-32">
       <p className="font-mono text-[var(--color-muted)] mb-4">Project not found.</p>
       <Link
-        to="/$locale/projects/"
+        to="/$locale/projects"
         params={{ locale: locale }}
         className="text-[var(--color-accent)] underline underline-offset-4"
       >
         {t('projects.back')}
       </Link>
-    </div>
+    </div >
   )
 
   const screenshots = project.images || [project.image, project.image, project.image]
@@ -32,7 +32,7 @@ export function ProjectDetailPage() {
         transition={{ duration: 0.5 }}
       >
         <Link
-          to="/$locale/"
+          to="/$locale"
           params={{ locale: locale }}
           hash="projects"
           className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 mb-12 inline-block"

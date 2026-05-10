@@ -57,7 +57,7 @@ export function NavigationBar() {
         }}
       >
         <Link
-          to="/$locale/"
+          to="/$locale"
           params={{ locale: locale || 'en' }}
           aria-label="Home"
           className="font-mono text-[13px] tracking-[0.05em] no-underline transition-colors duration-200 px-4 py-2 rounded-lg text-text hover:bg-accent-dim"

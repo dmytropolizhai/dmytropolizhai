@@ -41,14 +41,14 @@ export function ProjectsPage() {
               onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)'; e.currentTarget.style.transform = '' }}
             >
               <div style={{ overflow: 'hidden', aspectRatio: '16/10' }}>
-                <img src={project.image} alt={project.title} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s' }} />
+                <img src={project.image} alt={t(`projects.items.${project.id}.title`)} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s' }} />
               </div>
               <div style={{ padding: 24 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
-                  <h2 className="font-sans" style={{ fontSize: 17, fontWeight: 600, color: 'var(--color-text)' }}>{project.title}</h2>
+                  <h2 className="font-sans" style={{ fontSize: 17, fontWeight: 600, color: 'var(--color-text)' }}>{t(`projects.items.${project.id}.title`)}</h2>
                   <span className="font-mono" style={{ fontSize: 11, color: 'var(--color-muted)' }}>{project.year}</span>
                 </div>
-                <p className="font-mono" style={{ fontSize: 12, color: 'var(--color-muted)', lineHeight: 1.6, marginBottom: 16 }}>{project.description}</p>
+                <p className="font-mono" style={{ fontSize: 12, color: 'var(--color-muted)', lineHeight: 1.6, marginBottom: 16 }}>{t(`projects.items.${project.id}.description`)}</p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
                   {project.tags.map(tag => (
                     <span key={tag} className="font-mono" style={{ fontSize: 10, padding: '3px 8px', border: '1px solid var(--color-border-light)', color: 'var(--color-muted)', letterSpacing: '0.05em' }}>{tag}</span>

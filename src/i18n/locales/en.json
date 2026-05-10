@@ -1,4 +1,12 @@
 {
+  "cursor": {
+    "view_project": "View project",
+    "view_all_projects": "View all projects",
+    "view_details": "View details",
+    "back": "← Back to projects",
+    "view_work": "View work",
+    "view_services": "View services"
+  },
   "nav": {
     "approach": "Approach",
     "projects": "Projects",
@@ -72,7 +80,52 @@
     "section_label": "Projects",
     "view_all": "View all projects",
     "view_details": "View details",
-    "back": "← Back to projects"
+    "back": "← Back to projects",
+    "problem_label": "The Problem",
+    "solution_label": "The Solution",
+    "stats_label": "Statistics",
+    "items": {
+      "curio-today": {
+        "title": "Curio Today",
+        "description": "A modern curation platform for digital discovery and thoughtful exploration of niche interests.",
+        "problem": "Digital noise makes it hard to find high-quality, curated content. Users are overwhelmed by algorithmic feeds that prioritize engagement over value.",
+        "solution": "I built a platform that focuses on human-curated collections, using a minimalist UI to reduce cognitive load and Framer Motion for a \"tactile\" digital experience.",
+        "statistics": [
+          {
+            "label": "Active Users",
+            "value": "2.5k+"
+          },
+          {
+            "label": "Avg. Session",
+            "value": "8.4m"
+          },
+          {
+            "label": "Curation Rate",
+            "value": "94%"
+          }
+        ]
+      },
+      "studio": {
+        "title": "Stundio",
+        "description": "A modern curation platform for digital discovery and thoughtful exploration of niche interests.",
+        "problem": "Digital noise makes it hard to find high-quality, curated content. Users are overwhelmed by algorithmic feeds that prioritize engagement over value.",
+        "solution": "I built a platform that focuses on human-curated collections, using a minimalist UI to reduce cognitive load and Framer Motion for a \"tactile\" digital experience.",
+        "statistics": [
+          {
+            "label": "Active Users",
+            "value": "2.5k+"
+          },
+          {
+            "label": "Avg. Session",
+            "value": "8.4m"
+          },
+          {
+            "label": "Curation Rate",
+            "value": "94%"
+          }
+        ]
+      }
+    }
   },
   "cta": {
     "eyebrow": "Ready to work",

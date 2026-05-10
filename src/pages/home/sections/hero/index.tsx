@@ -14,7 +14,7 @@ export function HeroSection() {
     return (
         <section
             aria-label="Hero"
-            className="px-6 md:px-12 md:mx-2 md:mb-8 md:mt-2 min-h-screen grid grid-rows-[1fr_auto] relative overflow-hidden rounded-3xl"
+            className="px-6 md:px-12 md:mx-2 md:mb-8 md:mt-2 min-h-screen flex flex-col relative overflow-hidden rounded-3xl"
         >
             <div
                 style={{
@@ -25,10 +25,8 @@ export function HeroSection() {
             <GridLines />
             <Glow />
 
-            <div
-                aria-hidden="false"
-                className="inset-0 flex items-center justify-center z-0 pointer-events-none"
-            >
+            {/* Main Content Area */}
+            <div className="flex-1 flex flex-col items-center justify-center relative z-10 py-20">
                 {!isMobile && <FloatingBadges />}
 
                 <motion.div

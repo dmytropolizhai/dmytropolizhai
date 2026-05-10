@@ -72,7 +72,47 @@
     "section_label": "Projekti",
     "view_all": "Visi projekti",
     "view_details": "Skatīt",
-    "back": "← Atpakaļ uz projektiem"
+    "back": "← Atpakaļ uz projektiem",
+    "problem_label": "Problēma",
+    "solution_label": "Risinājums",
+    "stats_label": "Statistika",
+    "items": {
+      "curio-today": {
+        "title": "Curio Today",
+        "description": "Moderna kurācijas platforma digitālai atklāšanai un pārdomātai nišas interešu izpētei.",
+        "problem": "Digitālais troksnis apgrūtina augstas kvalitātes, kurēta satura atrašanu. Algoritmi bieži vien prioritizē iesaisti, nevis vērtību.",
+        "solution": "Es izveidoju platformu, kas koncentrējas uz cilvēka kurētām kolekcijām, izmantojot minimālistisku saskarni un Framer Motion taktīlai digitālai pieredzei.",
+        "statistics": [
+          { "label": "Aktīvie lietotāji", "value": "2.5k+" },
+          { "label": "Vid. sesija", "value": "8.4m" },
+          { "label": "Kurācijas līmenis", "value": "94%" }
+        ]
+      },
+      "news-portal": {
+        "title": "Ziņu portāls",
+        "description": "Pilnvērtīga ziņu platforma ar admin paneli, kategorijām un SEO optimizāciju vietējam Latvijas medijam."
+      },
+      "booking-bot": {
+        "title": "Rezervācijas Telegram bots",
+        "description": "Automatizēts vizīšu rezervācijas bots skaistumkopšanas salonam. Apstrādā grafikus, atgādinājumus un klientus."
+      },
+      "landing-cafe": {
+        "title": "Restorāna lapa",
+        "description": "Augstas konversijas lapa Rīgas restorānam ar ēdienkarti, galeriju un rezervācijas formu."
+      },
+      "price-parser": {
+        "title": "Cenu monitoringa skripts",
+        "description": "Automatizēts skripts konkurentu cenu izsekošanai ar ikdienas Telegram atskaitēm."
+      },
+      "salon-site": {
+        "title": "Salona mājaslapa",
+        "description": "Pilna mājaslapa ar tiešsaistes rezervāciju integrāciju, cenu tabulām un darbinieku profiliem."
+      },
+      "catalog-bot": {
+        "title": "Preču kataloga bots",
+        "description": "Interaktīvs Telegram bots, kas darbojas kā preču katalogs ar grozu, meklēšanu un apmaksu WhatsApp."
+      }
+    }
   },
   "cta": {
     "eyebrow": "Gatavs darbam",

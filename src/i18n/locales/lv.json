@@ -12,12 +12,20 @@
     "sub": "Izstrādāju mājas lapas, Telegram botus un automatizāciju mazajam biznesam.\nBez liekiem vārdiem — tikai tas, kas strādā.",
     "cta_primary": "Apspriest projektu",
     "cta_ghost": "Skatīt darbus",
-    "stat1_value": "150€+",
-    "stat1_label": "Maks. pasūtījums",
-    "stat2_value": "Top 5",
-    "stat2_label": "GitHub Latvija",
-    "stat3_value": "4 val.",
-    "stat3_label": "Valodas",
+    "stats": [
+      {
+        "value": "150€+",
+        "label": "Maks. pasūtījums"
+      },
+      {
+        "value": "Top 5",
+        "label": "GitHub Latvija"
+      },
+      {
+        "value": "4 val.",
+        "label": "Valodas"
+      }
+    ],
     "scroll": "Ritināt"
   },
   "about": {

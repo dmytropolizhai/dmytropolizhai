@@ -12,12 +12,20 @@
     "sub": "I build websites, Telegram bots and automation for small businesses.\nNo fluff — only what works and brings clients.",
     "cta_primary": "Discuss a project",
     "cta_ghost": "View my work",
-    "stat1_value": "150€+",
-    "stat1_label": "Max order",
-    "stat2_value": "Top 5",
-    "stat2_label": "GitHub Latvia",
-    "stat3_value": "4 lang.",
-    "stat3_label": "Communication",
+    "stats": [
+      {
+        "value": "150€+",
+        "label": "Max order"
+      },
+      {
+        "value": "Top 5",
+        "label": "GitHub Latvia"
+      },
+      {
+        "value": "4 lang.",
+        "label": "Communication"
+      }
+    ],
     "scroll": "Scroll"
   },
   "about": {

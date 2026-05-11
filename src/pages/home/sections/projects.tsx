@@ -89,13 +89,6 @@ export function ProjectsSection() {
     >
       <div className="px-6 md:px-12 mb-16 flex justify-between items-end">
         <SectionLabel index="03" label={t('projects.section_label')} />
-        {/* <Link
-          to="/$locale/projects/"
-          params={{ locale: locale || 'en' }}
-          className="font-mono text-[12px] text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 no-underline"
-        >
-          {t('projects.view_all')} →
-        </Link> */}
       </div>
 
       {/* Carousel Container */}
@@ -112,7 +105,7 @@ export function ProjectsSection() {
       >
         <div
           ref={containerRef}
-          className={`flex gap-8 px-6 md:px-12 overflow-x-auto scrollbar-hide select-none ${isMouseDown ? 'cursor-grabbing' : 'cursor-grab'}`}
+          className="flex gap-8 px-6 md:px-12 overflow-x-auto scrollbar-hide select-none"
           style={{ msOverflowStyle: 'none', scrollbarWidth: 'none' }}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
@@ -122,9 +115,8 @@ export function ProjectsSection() {
             <div
               key={`${project.id}-${i}`}
               className="flex-shrink-0 w-[300px] md:w-[450px]"
-              onMouseEnter={() => {
-                cursor.hint(t("cursor.view_details"), 2000)
-              }}
+              onMouseEnter={() => cursor.hint(t("cursor.view_details"))}
+              onMouseLeave={() => cursor.reset()}
             >
               <Link
                 to="/$locale/projects/$id"

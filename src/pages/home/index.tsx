@@ -7,8 +7,8 @@ export function HomePage() {
   return (
     <>
       <HeroSection />
-      <ProjectsSection />
       <AboutSection />
+      <ProjectsSection />
       <CtaSection />
     </>
   )

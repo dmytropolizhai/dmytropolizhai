@@ -12,7 +12,7 @@ import { Logo } from '@/components/logo'
 import { BurgerIcon, BurgerMenu } from './burger-menu'
 
 export function NavigationBar() {
-  const { t } = useTranslation()
+  const { t } = useTranslation("nav")
   const { scrollYProgress } = useScroll()
   const [menuOpen, setMenuOpen] = useState(false)
   const { locale } = useParams({ strict: false }) as { locale?: string }
@@ -37,8 +37,9 @@ export function NavigationBar() {
   } as any;
 
   const categories = useMemo(() => [
-    { href: `/${locale}#about`, label: t('nav.approach') },
-    { href: `/${locale}#cta`, label: t('nav.contact') },
+    { href: `/${locale}#about`, label: t('approach') },
+    { href: `/${locale}#projects`, label: t('projects') },
+    { href: `/${locale}#cta`, label: t('contact') },
   ], [locale, t])
 
   const toggleMenu = useCallback(() => setMenuOpen((v) => !v), [])

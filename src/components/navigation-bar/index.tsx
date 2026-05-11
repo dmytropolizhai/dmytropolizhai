@@ -10,8 +10,6 @@ import {
 import { LanguageSwitcher } from '@/components/language-switcher'
 import { Logo } from '@/components/logo'
 import { BurgerIcon, BurgerMenu } from './burger-menu'
-import { GitBranch } from 'lucide-react'
-import { cursor } from '../cursor'
 
 export function NavigationBar() {
   const { t } = useTranslation()
@@ -89,9 +87,6 @@ export function NavigationBar() {
             style={utilityClasses}
           >
             <LanguageSwitcher />
-            <a href="https://github.com/dmytropolizhai/dmytropolizhai" target="_blank" rel="noopener noreferrer">
-              <GitBranch className='text-border-light hover:text-accent size-4' onMouseEnter={() => cursor.hint("Source code")} />
-            </a>
           </motion.div>
         </div>
 

@@ -19,7 +19,7 @@ type BurgerMenuProps = {
 }
 
 export function BurgerIcon({ isOpen }: { isOpen: boolean }) {
-  
+
   return (
     <div className="relative w-5 h-4 flex flex-col justify-between">
       <motion.span
@@ -132,7 +132,7 @@ export function BurgerMenu({
                       ease: EASE,
                     }}
                   >
-                    <span className="font-sans text-[28px] font-medium tracking-tight text-text group-hover:text-accent transition-colors duration-200">
+                    <span className="font-sans text-[28px] capitalize font-medium tracking-tight text-text group-hover:text-accent transition-colors duration-200">
                       {label}
                     </span>
 

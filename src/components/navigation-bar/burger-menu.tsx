@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { LanguageSwitcher } from '@/components/language-switcher'
-import { ThemeToggle } from '@/components/theme-toggle'
 import { useTranslation } from 'react-i18next'
+import { DiscussButton } from './discuss-button'
 
 
 const BLOCK_COUNT = 5
@@ -169,13 +169,7 @@ export function BurgerMenu({
                   <LanguageSwitcher />
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-muted">
-                    {t('nav.theme', 'Theme')}
-                  </span>
-
-                  <ThemeToggle />
-                </div>
+                <DiscussButton />
               </motion.div>
             </motion.div>
           </motion.div>

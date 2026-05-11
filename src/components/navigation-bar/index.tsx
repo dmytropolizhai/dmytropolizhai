@@ -10,9 +10,10 @@ import {
 import { LanguageSwitcher } from '@/components/language-switcher'
 import { Logo } from '@/components/logo'
 import { BurgerIcon, BurgerMenu } from './burger-menu'
+import { DiscussButton } from './discuss-button'
 
 export function NavigationBar() {
-  const { t } = useTranslation("nav")
+  const { t } = useTranslation()
   const { scrollYProgress } = useScroll()
   const [menuOpen, setMenuOpen] = useState(false)
   const { locale } = useParams({ strict: false }) as { locale?: string }
@@ -37,9 +38,9 @@ export function NavigationBar() {
   } as any;
 
   const categories = useMemo(() => [
-    { href: `/${locale}#about`, label: t('approach') },
-    { href: `/${locale}#projects`, label: t('projects') },
-    { href: `/${locale}#cta`, label: t('contact') },
+    { href: `/${locale}#about`, label: t('nav.approach') },
+    { href: `/${locale}#projects`, label: t('nav.projects') },
+    { href: `/${locale}#cta`, label: t('nav.contact') },
   ], [locale, t])
 
   const toggleMenu = useCallback(() => setMenuOpen((v) => !v), [])
@@ -88,6 +89,7 @@ export function NavigationBar() {
             style={utilityClasses}
           >
             <LanguageSwitcher />
+            <DiscussButton />
           </motion.div>
         </div>
 
@@ -100,7 +102,7 @@ export function NavigationBar() {
         >
           <BurgerIcon isOpen={menuOpen} />
         </button>
-      </motion.nav>
+      </motion.nav >
 
       <BurgerMenu
         menuOpen={menuOpen}

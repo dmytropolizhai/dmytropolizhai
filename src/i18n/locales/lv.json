@@ -16,7 +16,27 @@
     "badge": "Atvērts jauniem projektiem",
     "title": {
       "line1": "Mājaslapa ir",
-      "line2": "jūsu biznesa seja.",
+      "lines": [
+        "jūsu uzņēmuma seja.",
+        "jūsu pirmais iespaids tiešsaistē.",
+        "vieta, kur sākas uzticība.",
+        "jūsu labākais pārdevējs.",
+        "vairāk nekā tikai dizains.",
+        "veidota, lai pārvērstu apmeklētājus klientiem.",
+        "jūsu zīmola centrs.",
+        "kā klienti jūs atrod.",
+        "jūsu digitālā vitrīna.",
+        "katra pārdošanas sākums.",
+        "vieta, kur idejas kļūst par biznesu.",
+        "jūsu reputācija tiešsaistē.",
+        "radīta izaugsmei kopā ar jums.",
+        "mārketinga pamats.",
+        "jūsu konkurences priekšrocība.",
+        "izstrādāta, lai iedvesmotu rīcībai.",
+        "jūsu uzņēmuma balss.",
+        "izstrādāta reāliem rezultātiem.",
+        "jūsu biznesa nākotne."
+      ],
       "muted": "Padarīsim to spēcīgu."
     },
     "sub": "Es izstrādāju mājaslapas, Telegram botus un automatizāciju mazajiem uzņēmumiem.\nBez lieka — tikai tas, kas strādā un piesaista klientus.",

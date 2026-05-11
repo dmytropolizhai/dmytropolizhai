@@ -5,10 +5,13 @@ import { Glow, GridLines } from './effects'
 import { fadeUp } from './animations'
 import { FloatingBadges } from './components/floating-badges'
 import { useIsMobile } from '@/hooks/use-is-mobile'
+import TextType from '@/components/ui/text-type'
 
 export function HeroSection() {
     const { t } = useTranslation()
     const isMobile = useIsMobile()
+
+    const lines = t("hero.title.lines", { returnObjects: true }) as string[];
 
     return (
         <section
@@ -47,7 +50,7 @@ export function HeroSection() {
                         {t('hero.title.line1')}
                         <br />
                         <em className="italic text-accent">
-                            {t('hero.title.line2')}
+                            <TextType text={lines} typingSpeed={100} deletingSpeed={60} pauseDuration={1000} />
                         </em>
                         <br />
                         <span className="text-muted">

@@ -16,7 +16,27 @@
     "badge": "Open for new projects",
     "title": {
       "line1": "A website is",
-      "line2": "your business face.",
+      "lines": [
+        "your business face.",
+        "your first impression online.",
+        "where trust begins.",
+        "your best salesperson.",
+        "more than just design.",
+        "built to convert visitors.",
+        "the center of your brand.",
+        "how customers find you.",
+        "your digital storefront.",
+        "the start of every sale.",
+        "where ideas become business.",
+        "your reputation online.",
+        "made to grow with you.",
+        "the foundation of marketing.",
+        "your competitive advantage.",
+        "crafted to inspire action.",
+        "the voice of your company.",
+        "designed for real results.",
+        "the future of your business."
+      ],
       "muted": "Let's make it strong."
     },
     "sub": "I build websites, Telegram bots and automation for small businesses.\nNo fluff — only what works and brings clients.",

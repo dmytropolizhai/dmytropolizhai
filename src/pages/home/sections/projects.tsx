@@ -16,6 +16,8 @@ export function ProjectsSection() {
   const [scrollLeft, setScrollLeft] = useState(0)
   const { locale } = useParams({ strict: false }) as { locale?: string }
 
+  const newestProjects = [...projects].sort((a, b) => b.year - a.year);
+
   // Auto-scroll logic
   useEffect(() => {
     const container = containerRef.current
@@ -111,7 +113,7 @@ export function ProjectsSection() {
           onMouseUp={handleMouseUp}
           onMouseMove={handleMouseMove}
         >
-          {projects.map((project, i) => (
+          {newestProjects.map((project, i) => (
             <div
               key={`${project.id}-${i}`}
               className="flex-shrink-0 w-[300px] md:w-[450px]"

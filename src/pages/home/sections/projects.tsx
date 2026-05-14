@@ -139,8 +139,11 @@ export function ProjectsSection() {
 
                 <div className="mt-6">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="font-serif text-2xl text-[var(--color-text)] group-hover/card:text-[var(--color-accent)] transition-colors duration-300">
+                    <h3 className="font-serif text-2xl text-[var(--color-text)] flex items-center gap-2 group-hover/card:text-[var(--color-accent)] transition-colors duration-300">
                       {t(`projects.items.${project.id}.title`)}
+                      {project.inProgress && (
+                        <span className="font-mono text-[12px] text-[var(--color-accent)]">In Progress</span>
+                      )}
                     </h3>
                     <span className="font-mono text-[12px] text-[var(--color-muted)]">{project.year}</span>
                   </div>

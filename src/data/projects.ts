@@ -5,6 +5,7 @@ export interface Project {
   image: string
   images?: string[]
   url?: string
+  inProgress?: boolean
 }
 
 export const projects: Project[] = [
@@ -29,5 +30,6 @@ export const projects: Project[] = [
       'https://placehold.co/600x800/3d2b1f/fff5eb?text=Stundio+Screenshot+2',
       'https://placehold.co/600x800/3d2b1f/fff5eb?text=Stundio+Screenshot+3'
     ],
+    inProgress: true
   }
 ]

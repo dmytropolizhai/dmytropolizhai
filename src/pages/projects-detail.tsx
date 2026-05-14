@@ -108,11 +108,14 @@ export function ProjectDetailPage() {
           transition={{ duration: 0.8, delay: 0.5, ease: 'easeOut' }}
           className="relative z-30 -mt-20 md:-mt-32 w-full  p-8 md:p-12 border border-border backdrop-blur-md bg-[rgba(var(--color-surface-rgb),0.8)] shadow-2xl rounded-sm"
         >
-          <h1 className="font-serif text-4xl md:text-6xl mb-6 leading-tight">
+          <h1 className="font-serif text-4xl md:text-6xl mb-6 leading-tight flex flex-col">
             <em className="not-italic opacity-50 block text-sm font-mono tracking-[0.2em] uppercase mb-4 italic-none">{project.year}</em>
             <em className="text-[var(--color-accent)] font-medium">
               {t(`projects.items.${project.id}.title`)}
             </em>
+            {project.inProgress && (
+              <span className="font-mono text-[12px] text-[var(--color-accent)]">In Progress</span>
+            )}  
           </h1>
           <p className="font-sans text-lg md:text-xl text-[var(--color-muted)] leading-relaxed">
             {t(`projects.items.${project.id}.description`)}

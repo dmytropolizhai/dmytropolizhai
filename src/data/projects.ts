@@ -20,9 +20,9 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "studio",
-    year: 2025,
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS", "Supabase"],
+    id: "stundio",
+    year: 2026,
+    tags: ["Flutter", "Dart", "Figma"],
     image: 'https://placehold.co/800x500/2D1B0B/E35D14?text=Stundio',
     images: [
       'https://placehold.co/600x800/3d2b1f/fff5eb?text=Stundio+Screenshot+1',

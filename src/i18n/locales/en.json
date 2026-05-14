@@ -125,23 +125,19 @@
           }
         ]
       },
-      "studio": {
+      "stundio": {
         "title": "Stundio",
-        "description": "A modern curation platform for digital discovery and thoughtful exploration of niche interests.",
-        "problem": "Digital noise makes it hard to find high-quality, curated content. Users are overwhelmed by algorithmic feeds that prioritize engagement over value.",
-        "solution": "I built a platform that focuses on human-curated collections, using a minimalist UI to reduce cognitive load and Framer Motion for a \"tactile\" digital experience.",
+        "description": "Stundio is a modern school scheduling platform that simplifies timetables, collaboration, and real-time schedule management for students and teachers.",
+        "problem": "Students and teachers struggle with outdated digital scheduling systems. Managing class changes, group projects, and timetable updates is time-consuming, error-prone, and lacks real-time synchronization.",
+        "solution": "I created a cross-platform app that fetches old data from EduPage and transform them to readable information using a minimalist UI to reduce cognitive load and Flutter for a smooth and intuitive user experience.",
         "statistics": [
           {
-            "label": "Active Users",
-            "value": "2.5k+"
+            "label": "Still in development",
+            "value": "3 months"
           },
           {
-            "label": "Avg. Session",
-            "value": "8.4m"
-          },
-          {
-            "label": "Curation Rate",
-            "value": "94%"
+            "label": "People count that waits it",
+            "value": "100+"
           }
         ]
       }

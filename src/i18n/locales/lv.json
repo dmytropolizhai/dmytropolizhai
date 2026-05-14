@@ -125,23 +125,19 @@
           }
         ]
       },
-      "studio": {
+      "stundio": {
         "title": "Stundio",
-        "description": "Mūsdienīga platforma digitālai atklāšanai un nišas interešu pārdomātai izpētei.",
-        "problem": "Digitālais troksnis apgrūtina kvalitatīva satura atrašanu. Lietotāji ir pārpildīti ar algoritmu lentēm, kas prioritizē iesaisti, nevis vērtību.",
-        "solution": "Es izveidoju platformu ar cilvēku veidotām kolekcijām, izmantojot minimālistisku UI, lai samazinātu kognitīvo slodzi, un Framer Motion, lai radītu “taustāmu” digitālo pieredzi.",
+        "description": "Stundio is a modern school scheduling platform that simplifies timetables, collaboration, and real-time schedule management for students and teachers.",
+        "problem": "Students and teachers struggle with outdated digital scheduling systems. Managing class changes, group projects, and timetable updates is time-consuming, error-prone, and lacks real-time synchronization.",
+        "solution": "I created a cross-platform app that fetches old data from EduPage and transform them to readable information using a minimalist UI to reduce cognitive load and Flutter for a smooth and intuitive user experience.",
         "statistics": [
           {
-            "label": "Aktīvie lietotāji",
-            "value": "2.5k+"
+            "label": "Still in development",
+            "value": "3 months"
           },
           {
-            "label": "Vid. sesija",
-            "value": "8.4m"
-          },
-          {
-            "label": "Kurācijas līmenis",
-            "value": "94%"
+            "label": "People count that waits it",
+            "value": "100+"
           }
         ]
       }

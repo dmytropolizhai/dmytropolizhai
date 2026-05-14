@@ -1,0 +1,1 @@
+import{u as s,r as t,i as e,j as o,O as n}from"./index-C1ZA-rRH.js";function c(){const{locale:a}=s({from:"/$locale"});return t.useEffect(()=>{e.language!==a&&e.changeLanguage(a)},[a]),o.jsx(n,{})}export{c as component};

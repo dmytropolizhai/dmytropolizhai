@@ -10,12 +10,14 @@ import { ForegroundContentBox } from './components/foreground-content-box'
 import { DetailsGrid } from './components/details-grid'
 import { ImagePreviewModal } from './components/image-preview-modal'
 import type { Image } from '@/types'
+import { useIsMobile } from '@/hooks/use-is-mobile'
 
 export function ProjectDetailPage() {
   const { t } = useTranslation()
   const { id } = useParams({ from: '/projects/$id' })
   const project = projects.find(p => p.id === id)
   const [selectedImage, setSelectedImage] = useState<Image | null>(null)
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (selectedImage) {
@@ -77,55 +79,59 @@ export function ProjectDetailPage() {
       <BackButton />
 
       <section className="relative mb-32 pt-20 flex flex-col items-center">
-        <div className="relative w-full max-w-4xl h-[400px] md:h-[600px] flex items-center justify-center">
-          <AnimatePresence mode="wait">
-            {screenshotConfigs.map(
-              ({
-                key,
-                image,
-                initial,
-                animate,
-                hover,
-                delay,
-                className
-              }) => (
-                <motion.div
-                  key={`${id}-${key}`}
-                  initial={initial ?? { opacity: 0, x: 0, rotate: 0, scale: 0.8 }}
-                  animate={animate}
-                  whileHover={hover}
-                  transition={{
-                    duration: 0.8,
-                    delay,
-                    ease: [0.16, 1, 0.3, 1]
-                  }}
-                  onClick={() => setSelectedImage({
-                    src: image.src,
-                    alt: t(`projects.items.${id}.screenshots.${key}`),
-                  })}
-                  className={className}
-                  style={{ backgroundColor: "var(--color-surface)" }}
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="block w-full h-auto object-contain"
-                  />
-                </motion.div>
-              )
-            )}
-          </AnimatePresence>
-        </div>
+        {!isMobile && (
+          <div className="relative w-full max-w-4xl h-[400px] md:h-[600px] flex items-center justify-center">
+            <AnimatePresence mode="wait">
+              {screenshotConfigs.map(
+                ({
+                  key,
+                  image,
+                  initial,
+                  animate,
+                  hover,
+                  delay,
+                  className
+                }) => (
+                  <motion.div
+                    key={`${id}-${key}`}
+                    initial={initial ?? { opacity: 0, x: 0, rotate: 0, scale: 0.8 }}
+                    animate={animate}
+                    whileHover={hover}
+                    transition={{
+                      duration: 0.8,
+                      delay,
+                      ease: [0.16, 1, 0.3, 1]
+                    }}
+                    onClick={() => setSelectedImage({
+                      src: image.src,
+                      alt: t(`projects.items.${id}.screenshots.${key}`),
+                    })}
+                    className={className}
+                    style={{ backgroundColor: "var(--color-surface)" }}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="block w-full h-auto object-contain"
+                    />
+                  </motion.div>
+                )
+              )}
+            </AnimatePresence>
+          </div>
+        )}
 
         <ForegroundContentBox project={project} />
       </section>
 
       <DetailsGrid project={project} />
 
-      <ImagePreviewModal
-        image={selectedImage}
-        onClose={() => setSelectedImage(null)}
-      />
+      {!isMobile && (
+        <ImagePreviewModal
+          image={selectedImage}
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div >
   )
 }

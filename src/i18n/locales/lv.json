@@ -3,9 +3,9 @@
     "view_project": "Skatīt projektu",
     "view_all_projects": "Skatīt visus projektus",
     "view_details": "Skatīt detaļas",
-    "back": "← Atpakaļ uz projektiem",
-    "view_work": "Skatīt darbus",
-    "view_services": "Skatīt pakalpojumus"
+    "back": "← Atpakaļ pie projektiem",
+    "view_work": "Apskatīt darbus",
+    "view_services": "Apskatīt pakalpojumus"
   },
   "nav": {
     "approach": "Pieeja",
@@ -19,42 +19,42 @@
       "lines": [
         "jūsu uzņēmuma seja.",
         "jūsu pirmais iespaids tiešsaistē.",
-        "vieta, kur sākas uzticība.",
+        "kur sākas uzticēšanās.",
         "jūsu labākais pārdevējs.",
         "vairāk nekā tikai dizains.",
-        "veidota, lai pārvērstu apmeklētājus klientiem.",
+        "veidota, lai pārvērstu apmeklētājus.",
         "jūsu zīmola centrs.",
         "kā klienti jūs atrod.",
         "jūsu digitālā vitrīna.",
         "katra pārdošanas sākums.",
-        "vieta, kur idejas kļūst par biznesu.",
+        "kur idejas kļūst par biznesu.",
         "jūsu reputācija tiešsaistē.",
-        "radīta izaugsmei kopā ar jums.",
+        "veidota augt kopā ar jums.",
         "mārketinga pamats.",
-        "jūsu konkurences priekšrocība.",
-        "izstrādāta, lai iedvesmotu rīcībai.",
+        "konkurences priekšrocība.",
+        "radīta, lai iedvesmotu rīcību.",
         "jūsu uzņēmuma balss.",
-        "izstrādāta reāliem rezultātiem.",
+        "veidota reāliem rezultātiem.",
         "jūsu biznesa nākotne."
       ],
       "muted": "Padarīsim to spēcīgu."
     },
-    "sub": "Es izstrādāju mājaslapas, Telegram botus un automatizāciju mazajiem uzņēmumiem.\nBez lieka — tikai tas, kas strādā un piesaista klientus.",
+    "sub": "Es veidoju mājaslapas, Telegram botus un automatizācijas mazajiem uzņēmumiem.\nBez liekvārdības — tikai tas, kas strādā un piesaista klientus.",
     "cta": {
       "primary": "Apspriest projektu",
-      "ghost": "Skatīt manus darbus"
+      "ghost": "Apskatīt manus darbus"
     },
     "stats": [
       {
         "value": "150€+",
-        "label": "Maks. pasūtījums"
+        "label": "Maksimālais pasūtījums"
       },
       {
         "value": "Top 5",
         "label": "GitHub Latvijā"
       },
       {
-        "value": "4 val.",
+        "value": "4 valodas",
         "label": "Komunikācija"
       }
     ],
@@ -62,15 +62,15 @@
     "badges": {
       "fast": {
         "label": "Ātra piegāde",
-        "desc": "Pirmā versija online 7 dienu laikā"
+        "desc": "Pirmā versija 7 dienu laikā"
       },
       "result": {
-        "label": "Fokuss uz rezultātu",
-        "desc": "Klienti un konversijas, ne tikai dizains"
+        "label": "Uz rezultātu orientēts",
+        "desc": "Klienti un konversijas, nevis tikai dizains"
       },
       "support": {
         "label": "Pastāvīgs atbalsts",
-        "desc": "Es palieku pieejams arī pēc palaišanas"
+        "desc": "Es esmu klāt arī pēc palaišanas"
       },
       "langs": {
         "label": "4 valodas",
@@ -81,13 +81,13 @@
   "about": {
     "section_label": "Pieeja",
     "title": {
-      "line1": "Lai strādā,",
-      "line2": "tad uzlabo",
+      "line1": "Lai tas darbojas,",
+      "line2": "lai tas ir pareizi",
       "prefix": ""
     },
-    "body1": "Mazam biznesam nav vajadzīga aģentūra ar 40 slaidu prezentāciju. Tam vajag <strong>skaidru mājaslapu</strong>, kas ielādējas ātri, izskatās profesionāli un pārvērš apmeklētājus klientos.",
-    "body2": "Tieši to es arī veidoju — bez liekas sarežģīšanas, laikā un par <strong>godīgu cenu</strong>. Jūs aprakstāt uzdevumu, es to atrisinu.",
-    "service1": "Mājaslapas un landing pages",
+    "body1": "Mazam biznesam nav vajadzīga aģentūra ar 40 slaidu prezentāciju. Vajadzīga <strong>skaidra mājaslapa</strong>, kas ātri ielādējas, izskatās profesionāli un piesaista klientus.",
+    "body2": "Es veidoju tieši to — bez pārmērīgas sarežģīšanas, laikā un par <strong>godīgu cenu</strong>. Tu pasaki uzdevumu, es to atrisinu.",
+    "service1": "Mājaslapas un landing lapas",
     "service1_tag": "Galvenais",
     "service2": "Telegram boti",
     "service3": "Skripti un automatizācija",
@@ -97,50 +97,17 @@
     "lang4": "Angļu"
   },
   "projects": {
+    "in_progress": "Tiek izstrādē",
+    "visit": "Apmeklēt vietni",
     "section_label": "Projekti",
-    "view_all": "Skatīt visus projektus",
+    "view_all": "Apskatīt visus projektus",
     "view_details": "Skatīt detaļas",
-    "back": "← Atpakaļ uz projektiem",
-    "problem_label": "Problēma",
-    "solution_label": "Risinājums",
-    "stats_label": "Statistika",
-    "items": {
-      "curio-today": {
-        "title": "Curio Today",
-        "description": "Mūsdienīga platforma digitālai atklāšanai un nišas interešu pārdomātai izpētei.",
-        "problem": "Digitālais troksnis apgrūtina kvalitatīva satura atrašanu. Lietotāji ir pārpildīti ar algoritmu lentēm, kas prioritizē iesaisti, nevis vērtību.",
-        "solution": "Es izveidoju platformu ar cilvēku veidotām kolekcijām, izmantojot minimālistisku UI, lai samazinātu kognitīvo slodzi, un Framer Motion, lai radītu “taustāmu” digitālo pieredzi.",
-        "statistics": [
-          {
-            "label": "Aktīvie lietotāji",
-            "value": "2.5k+"
-          },
-          {
-            "label": "Vid. sesija",
-            "value": "8.4m"
-          },
-          {
-            "label": "Kurācijas līmenis",
-            "value": "94%"
-          }
-        ]
-      },
-      "stundio": {
-        "title": "Stundio",
-        "description": "Stundio is a modern school scheduling platform that simplifies timetables, collaboration, and real-time schedule management for students and teachers.",
-        "problem": "Students and teachers struggle with outdated digital scheduling systems. Managing class changes, group projects, and timetable updates is time-consuming, error-prone, and lacks real-time synchronization.",
-        "solution": "I created a cross-platform app that fetches old data from EduPage and transform them to readable information using a minimalist UI to reduce cognitive load and Flutter for a smooth and intuitive user experience.",
-        "statistics": [
-          {
-            "label": "Still in development",
-            "value": "3 months"
-          },
-          {
-            "label": "People count that waits it",
-            "value": "100+"
-          }
-        ]
-      }
+    "back": "← Atpakaļ pie projektiem",
+    "labels": {
+      "problem": "Problēma",
+      "solution": "Risinājums",
+      "statistics": "Statistika",
+      "not-provided": "Nav norādīts"
     }
   },
   "cta": {
@@ -149,7 +116,7 @@
       "line1": "Ir uzdevums?",
       "line2": "Atrisināsim to."
     },
-    "sub": "Aprakstiet, kas jums nepieciešams — es atbildēšu dažu stundu laikā.\nPirmā konsultācija ir bez maksas.",
+    "sub": "Apraksti, kas nepieciešams — es atbildēšu dažu stundu laikā.\nPirmā konsultācija ir bez maksas.",
     "telegram": "Rakstīt Telegram",
     "response_note": "Parasti atbildu",
     "response_time": "2–3 stundu laikā",
@@ -161,17 +128,17 @@
   },
   "footer": {
     "copy": "© 2025 Polizhai.site — Rīga, Latvija",
-    "open_source_code": "Open source code"
+    "open_source_code": "Atvērtā pirmkoda kods"
   },
   "meta": {
-    "home_title": "Mājaslapu izstrāde un Telegram boti mazajam biznesam",
+    "home_title": "Ātra mājaslapu izstrāde un Telegram boti mazajiem uzņēmumiem",
     "projects_title": "Projekti — Polizhai.site",
     "project_detail_title": "Projekts — Polizhai.site"
   },
   "seo": {
-    "h1": "Ātras mājaslapas mazajam biznesam, kas tiešām strādā",
-    "h2_websites": "Vienkāršas mājaslapas, kas veidotas rezultātam",
-    "h2_bots": "Telegram boti darba automatizācijai",
-    "h2_scripts": "Pielāgoti skripti laika taupīšanai un manuālā darba samazināšanai"
+    "h1": "Ātras mājaslapas mazajiem uzņēmumiem, kas strādā",
+    "h2_websites": "Vienkāršas mājaslapas ar rezultātu fokusu",
+    "h2_bots": "Telegram boti, kas automatizē darbu",
+    "h2_scripts": "Pielāgoti skripti laika ietaupīšanai"
   }
 }

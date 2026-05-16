@@ -97,13 +97,18 @@
     "lang4": "English"
   },
   "projects": {
+    "in_progress": "In progress",
+    "visit": "Visit website",
     "section_label": "Projects",
     "view_all": "View all projects",
     "view_details": "View details",
     "back": "← Back to projects",
-    "problem_label": "The Problem",
-    "solution_label": "The Solution",
-    "stats_label": "Statistics",
+    "labels": {
+      "problem": "The Problem",
+      "solution": "The Solution",
+      "statistics": "Statistics",
+      "not-provided": "Not provided"
+    },
     "items": {
       "curio-today": {
         "title": "Curio Today",
@@ -123,7 +128,12 @@
             "label": "Curation Rate",
             "value": "94%"
           }
-        ]
+        ],
+        "screenshots": {
+          "screenshot-1": "Curio.today main page screenshot. There you can see 4 sections: Amazes, Informs, Amuses, Inspires.",
+          "screenshot-2": "Curio.today search page screenshot.",
+          "screenshot-3": "Curio Today category page screenshot."
+        }
       },
       "stundio": {
         "title": "Stundio",

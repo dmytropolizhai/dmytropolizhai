@@ -16,7 +16,6 @@ export function NavigationBar() {
   const { t } = useTranslation()
   const { scrollYProgress } = useScroll()
   const [menuOpen, setMenuOpen] = useState(false)
-  const { locale } = useParams({ strict: false }) as { locale?: string }
 
   const progress = useTransform(scrollYProgress, [0, 1], [0, 0.8], { clamp: true })
 
@@ -38,10 +37,10 @@ export function NavigationBar() {
   } as any;
 
   const categories = useMemo(() => [
-    { href: `/${locale}#about`, label: t('nav.approach') },
-    { href: `/${locale}#projects`, label: t('nav.projects') },
-    { href: `/${locale}#cta`, label: t('nav.contact') },
-  ], [locale, t])
+    { href: `/#about`, label: t('nav.approach') },
+    { href: `/#projects`, label: t('nav.projects') },
+    { href: `/#cta`, label: t('nav.contact') },
+  ], [t])
 
   const toggleMenu = useCallback(() => setMenuOpen((v) => !v), [])
   const closeMenu = useCallback(() => setMenuOpen(false), [])
@@ -59,8 +58,7 @@ export function NavigationBar() {
         }}
       >
         <Link
-          to="/$locale"
-          params={{ locale: locale || 'en' }}
+          to="/"
           aria-label="Home"
           className="font-mono text-[13px] tracking-[0.05em] no-underline transition-colors duration-200 px-4 py-2 rounded-lg text-text hover:bg-accent-dim"
         >

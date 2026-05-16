@@ -121,13 +121,13 @@ export function ProjectsSection() {
               onMouseLeave={() => cursor.reset()}
             >
               <Link
-                to="/$locale/projects/$id"
-                params={{ locale: locale || 'en', id: project.id }}
+                to="/projects/$id"
+                params={{ id: project.id }}
                 className={`block no-underline group/card ${isDragging ? 'pointer-events-none' : ''}`}
               >
                 <div className="relative aspect-[16/10] overflow-hidden rounded-sm border border-[var(--color-border)] transition-colors duration-500 group-hover/card:border-[var(--color-border-light)]">
                   <img
-                    src={project.image}
+                    src={project.preview.src}
                     alt={t(`projects.items.${project.id}.title`)}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-105"

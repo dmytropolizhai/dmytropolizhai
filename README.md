@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./cover.jpg" alt="Software Engineer" />
+    <img src="./cover.jpg" alt="Let's talk" />
 </p
 
 # Hi there!

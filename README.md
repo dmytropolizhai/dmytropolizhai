@@ -16,8 +16,8 @@ Full-stack developer with a Linux-first mindset. I build software with a focus o
 
 ### [ About ]
 
-  * **Role:** Full-Stack Developer
-  * **OS:** Arch / Debian (Linux-first)
+  * **Role:** Full-Stack Developer / Software Developer
+  * **OS:** Arch
   * **Focus:** Software architecture & Clean Code
   * **Philosophy:** Simplicity is the ultimate sophistication.
 

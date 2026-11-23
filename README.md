@@ -6,10 +6,6 @@
   I design, build and launch web apps — from the first commit to the live site.
 </p>
 
-<p align="center">
-  <img src="assets/stats.svg" alt="400+ students every school day (Stundio). 442 of 545 commits are mine (Stundio). 830 of 830 commits in the frontend (Curio). 10% lower page load time (Curio)." width="100%" />
-</p>
-
 <img src="assets/divider.svg" alt="" width="100%" />
 
 ## Selected work
